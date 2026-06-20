@@ -52,7 +52,7 @@ export default function HomeScreen() {
     >
       <View style={styles.heroWrap}>
         <ImageBackground
-          source={IMAGES.appBackground}
+          source={IMAGES.homeHero}
           style={styles.heroImage}
           imageStyle={styles.heroImageInner}
         >
