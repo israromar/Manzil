@@ -1,25 +1,34 @@
 {
   "expo": {
     "name": "Manzil",
-    "slug": "Manzil",
+    "slug": "manzil",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
+    "scheme": "manzil",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-audio",
+        {
+          "enableBackgroundPlayback": true
+        }
+      ]
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "audio"
+        ]
+      }
     },
     "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      },
-      "predictiveBackGestureEnabled": false
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_MEDIA_PLAYBACK"
+      ]
     }
   }
 }
