@@ -8,6 +8,10 @@ import {
   BISMILLAH_URDU,
   mushafPageLabel,
   sectionShowsBismillah,
+  sectionShowsOpeningTaawwudh,
+  TAAWWUDH_ARABIC,
+  TAAWWUDH_ENGLISH,
+  TAAWWUDH_URDU,
 } from '../../constants/mushaf';
 import {
   ARABIC_FONT_SIZE,
@@ -48,7 +52,18 @@ function MushafSectionPageBase({
     (ARABIC_FONT_SIZE[settings.fontSize] + 4) * Math.min(scale, 1.2);
   const lineHeight = LINE_HEIGHT_MULTIPLIER[settings.lineHeight] + 0.25;
   const showBismillah = sectionShowsBismillah(section.surahNumber);
+  const showOpeningTaawwudh = sectionShowsOpeningTaawwudh(
+    section.surahNumber,
+    sectionIndex,
+  );
   const pageBackground = settings.theme === 'dark' ? '#0C0C0C' : theme.surface;
+
+  const openingTranslation =
+    settings.translationMode === 'arabic_urdu'
+      ? TAAWWUDH_URDU
+      : settings.translationMode === 'arabic_english'
+        ? TAAWWUDH_ENGLISH
+        : null;
 
   const bismillahTranslation =
     settings.translationMode === 'arabic_urdu'
@@ -74,6 +89,30 @@ function MushafSectionPageBase({
         { backgroundColor: pageBackground, borderColor: theme.border },
       ]}
     >
+      {showOpeningTaawwudh ? (
+        <View style={styles.bismillahBlock}>
+          <Text
+            style={[
+              styles.bismillahArabic,
+              {
+                color: theme.text,
+                fontSize: arabicSize * 0.85,
+                lineHeight: arabicSize * 1.35,
+              },
+            ]}
+          >
+            {TAAWWUDH_ARABIC}
+          </Text>
+          {openingTranslation ? (
+            <Text
+              style={[styles.bismillahTranslation, { color: theme.subtext }]}
+            >
+              {openingTranslation}
+            </Text>
+          ) : null}
+        </View>
+      ) : null}
+
       {showBismillah ? (
         <View style={styles.bismillahBlock}>
           <Text

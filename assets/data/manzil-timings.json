@@ -1,0 +1,699 @@
+{
+  "source": "Quran.com chapter_recitations/7 start-to-start ayah spacing + 4200ms opening ta'awwudh + 2800ms bismillah, scaled to https://manzildua.pk/wp-content/uploads/2026/01/youtube_audio_1768290276078.mp3",
+  "audioDurationMs": 1097796,
+  "rawDurationMs": 1069950,
+  "scale": 1.0260255152109912,
+  "taawwudhDurationMs": 4309,
+  "bismillahDurationMs": 2873,
+  "generatedAt": "2026-06-20T21:52:33.747Z",
+  "taawwudhWindows": [
+    {
+      "startMs": 0,
+      "endMs": 4309
+    }
+  ],
+  "bismillahWindows": [
+    {
+      "startMs": 4309,
+      "endMs": 7182
+    },
+    {
+      "startMs": 48567,
+      "endMs": 51440
+    },
+    {
+      "startMs": 352086,
+      "endMs": 354959
+    },
+    {
+      "startMs": 443607,
+      "endMs": 446480
+    },
+    {
+      "startMs": 518020,
+      "endMs": 520893
+    },
+    {
+      "startMs": 569490,
+      "endMs": 572363
+    },
+    {
+      "startMs": 629764,
+      "endMs": 632637
+    },
+    {
+      "startMs": 715494,
+      "endMs": 718367
+    },
+    {
+      "startMs": 823745,
+      "endMs": 826617
+    },
+    {
+      "startMs": 915979,
+      "endMs": 918852
+    },
+    {
+      "startMs": 961601,
+      "endMs": 964474
+    },
+    {
+      "startMs": 1009368,
+      "endMs": 1012241
+    },
+    {
+      "startMs": 1025769,
+      "endMs": 1028642
+    },
+    {
+      "startMs": 1053015,
+      "endMs": 1055888
+    }
+  ],
+  "verses": [
+    {
+      "id": 1,
+      "verseKey": "1:2",
+      "surahNumber": 1,
+      "ayah": 1,
+      "startMs": 7182,
+      "endMs": 12918
+    },
+    {
+      "id": 2,
+      "verseKey": "1:3",
+      "surahNumber": 1,
+      "ayah": 2,
+      "startMs": 12918,
+      "endMs": 17658
+    },
+    {
+      "id": 3,
+      "verseKey": "1:4",
+      "surahNumber": 1,
+      "ayah": 3,
+      "startMs": 17658,
+      "endMs": 22429
+    },
+    {
+      "id": 4,
+      "verseKey": "1:5",
+      "surahNumber": 1,
+      "ayah": 4,
+      "startMs": 22429,
+      "endMs": 29314
+    },
+    {
+      "id": 5,
+      "verseKey": "1:6",
+      "surahNumber": 1,
+      "ayah": 5,
+      "startMs": 29314,
+      "endMs": 35049
+    },
+    {
+      "id": 6,
+      "verseKey": "1:7",
+      "surahNumber": 1,
+      "ayah": 6,
+      "startMs": 35049,
+      "endMs": 48567
+    },
+    {
+      "id": 7,
+      "verseKey": "2:1",
+      "surahNumber": 2,
+      "ayah": 1,
+      "startMs": 51440,
+      "endMs": 59289
+    },
+    {
+      "id": 8,
+      "verseKey": "2:2",
+      "surahNumber": 2,
+      "ayah": 2,
+      "startMs": 59289,
+      "endMs": 68513
+    },
+    {
+      "id": 9,
+      "verseKey": "2:3",
+      "surahNumber": 2,
+      "ayah": 3,
+      "startMs": 68513,
+      "endMs": 80230
+    },
+    {
+      "id": 10,
+      "verseKey": "2:4",
+      "surahNumber": 2,
+      "ayah": 4,
+      "startMs": 80230,
+      "endMs": 96472
+    },
+    {
+      "id": 11,
+      "verseKey": "2:5",
+      "surahNumber": 2,
+      "ayah": 5,
+      "startMs": 96472,
+      "endMs": 108082
+    },
+    {
+      "id": 12,
+      "verseKey": "2:163",
+      "surahNumber": 2,
+      "ayah": 163,
+      "startMs": 108082,
+      "endMs": 120163
+    },
+    {
+      "id": 13,
+      "verseKey": "2:255",
+      "surahNumber": 2,
+      "ayah": 255,
+      "startMs": 120163,
+      "endMs": 173475
+    },
+    {
+      "id": 14,
+      "verseKey": "2:256",
+      "surahNumber": 2,
+      "ayah": 256,
+      "startMs": 173475,
+      "endMs": 199311
+    },
+    {
+      "id": 15,
+      "verseKey": "2:257",
+      "surahNumber": 2,
+      "ayah": 257,
+      "startMs": 199311,
+      "endMs": 233267
+    },
+    {
+      "id": 16,
+      "verseKey": "2:284",
+      "surahNumber": 2,
+      "ayah": 284,
+      "startMs": 233267,
+      "endMs": 265371
+    },
+    {
+      "id": 17,
+      "verseKey": "2:285",
+      "surahNumber": 2,
+      "ayah": 285,
+      "startMs": 265371,
+      "endMs": 299035
+    },
+    {
+      "id": 18,
+      "verseKey": "2:286",
+      "surahNumber": 2,
+      "ayah": 286,
+      "startMs": 299035,
+      "endMs": 352086
+    },
+    {
+      "id": 19,
+      "verseKey": "3:18",
+      "surahNumber": 3,
+      "ayah": 18,
+      "startMs": 354959,
+      "endMs": 378809
+    },
+    {
+      "id": 20,
+      "verseKey": "3:26",
+      "surahNumber": 3,
+      "ayah": 26,
+      "startMs": 378809,
+      "endMs": 419768
+    },
+    {
+      "id": 21,
+      "verseKey": "3:27",
+      "surahNumber": 3,
+      "ayah": 27,
+      "startMs": 419768,
+      "endMs": 443607
+    },
+    {
+      "id": 22,
+      "verseKey": "7:54",
+      "surahNumber": 7,
+      "ayah": 54,
+      "startMs": 446480,
+      "endMs": 488670
+    },
+    {
+      "id": 23,
+      "verseKey": "7:55",
+      "surahNumber": 7,
+      "ayah": 55,
+      "startMs": 488670,
+      "endMs": 500572
+    },
+    {
+      "id": 24,
+      "verseKey": "7:56",
+      "surahNumber": 7,
+      "ayah": 56,
+      "startMs": 500572,
+      "endMs": 518020
+    },
+    {
+      "id": 25,
+      "verseKey": "17:110",
+      "surahNumber": 17,
+      "ayah": 110,
+      "startMs": 520893,
+      "endMs": 543516
+    },
+    {
+      "id": 26,
+      "verseKey": "17:111",
+      "surahNumber": 17,
+      "ayah": 111,
+      "startMs": 543516,
+      "endMs": 569490
+    },
+    {
+      "id": 27,
+      "verseKey": "23:115",
+      "surahNumber": 23,
+      "ayah": 115,
+      "startMs": 572363,
+      "endMs": 585199
+    },
+    {
+      "id": 28,
+      "verseKey": "23:116",
+      "surahNumber": 23,
+      "ayah": 116,
+      "startMs": 585199,
+      "endMs": 598547
+    },
+    {
+      "id": 29,
+      "verseKey": "23:117",
+      "surahNumber": 23,
+      "ayah": 117,
+      "startMs": 598547,
+      "endMs": 619294
+    },
+    {
+      "id": 30,
+      "verseKey": "23:118",
+      "surahNumber": 23,
+      "ayah": 118,
+      "startMs": 619294,
+      "endMs": 629764
+    },
+    {
+      "id": 31,
+      "verseKey": "37:1",
+      "surahNumber": 37,
+      "ayah": 1,
+      "startMs": 632637,
+      "endMs": 639753
+    },
+    {
+      "id": 32,
+      "verseKey": "37:2",
+      "surahNumber": 37,
+      "ayah": 2,
+      "startMs": 639753,
+      "endMs": 643246
+    },
+    {
+      "id": 33,
+      "verseKey": "37:3",
+      "surahNumber": 37,
+      "ayah": 3,
+      "startMs": 643246,
+      "endMs": 646673
+    },
+    {
+      "id": 34,
+      "verseKey": "37:4",
+      "surahNumber": 37,
+      "ayah": 4,
+      "startMs": 646673,
+      "endMs": 651013
+    },
+    {
+      "id": 35,
+      "verseKey": "37:5",
+      "surahNumber": 37,
+      "ayah": 5,
+      "startMs": 651013,
+      "endMs": 659427
+    },
+    {
+      "id": 36,
+      "verseKey": "37:6",
+      "surahNumber": 37,
+      "ayah": 6,
+      "startMs": 659427,
+      "endMs": 669625
+    },
+    {
+      "id": 37,
+      "verseKey": "37:7",
+      "surahNumber": 37,
+      "ayah": 7,
+      "startMs": 669625,
+      "endMs": 676838
+    },
+    {
+      "id": 38,
+      "verseKey": "37:8",
+      "surahNumber": 37,
+      "ayah": 8,
+      "startMs": 676838,
+      "endMs": 686955
+    },
+    {
+      "id": 39,
+      "verseKey": "37:9",
+      "surahNumber": 37,
+      "ayah": 9,
+      "startMs": 686955,
+      "endMs": 693111
+    },
+    {
+      "id": 40,
+      "verseKey": "37:10",
+      "surahNumber": 37,
+      "ayah": 10,
+      "startMs": 693111,
+      "endMs": 701227
+    },
+    {
+      "id": 41,
+      "verseKey": "37:11",
+      "surahNumber": 37,
+      "ayah": 11,
+      "startMs": 701227,
+      "endMs": 715494
+    },
+    {
+      "id": 42,
+      "verseKey": "55:33",
+      "surahNumber": 55,
+      "ayah": 33,
+      "startMs": 718367,
+      "endMs": 742940
+    },
+    {
+      "id": 43,
+      "verseKey": "55:34",
+      "surahNumber": 55,
+      "ayah": 34,
+      "startMs": 742940,
+      "endMs": 752000
+    },
+    {
+      "id": 44,
+      "verseKey": "55:35",
+      "surahNumber": 55,
+      "ayah": 35,
+      "startMs": 752000,
+      "endMs": 766928
+    },
+    {
+      "id": 45,
+      "verseKey": "55:36",
+      "surahNumber": 55,
+      "ayah": 36,
+      "startMs": 766928,
+      "endMs": 776922
+    },
+    {
+      "id": 46,
+      "verseKey": "55:37",
+      "surahNumber": 55,
+      "ayah": 37,
+      "startMs": 776922,
+      "endMs": 789470
+    },
+    {
+      "id": 47,
+      "verseKey": "55:38",
+      "surahNumber": 55,
+      "ayah": 38,
+      "startMs": 789470,
+      "endMs": 798530
+    },
+    {
+      "id": 48,
+      "verseKey": "55:39",
+      "surahNumber": 55,
+      "ayah": 39,
+      "startMs": 798530,
+      "endMs": 813992
+    },
+    {
+      "id": 49,
+      "verseKey": "55:40",
+      "surahNumber": 55,
+      "ayah": 40,
+      "startMs": 813992,
+      "endMs": 823745
+    },
+    {
+      "id": 50,
+      "verseKey": "59:21",
+      "surahNumber": 59,
+      "ayah": 21,
+      "startMs": 826617,
+      "endMs": 853469
+    },
+    {
+      "id": 51,
+      "verseKey": "59:22",
+      "surahNumber": 59,
+      "ayah": 22,
+      "startMs": 853469,
+      "endMs": 869126
+    },
+    {
+      "id": 52,
+      "verseKey": "59:23",
+      "surahNumber": 59,
+      "ayah": 23,
+      "startMs": 869126,
+      "endMs": 892663
+    },
+    {
+      "id": 53,
+      "verseKey": "59:24",
+      "surahNumber": 59,
+      "ayah": 24,
+      "startMs": 892663,
+      "endMs": 915979
+    },
+    {
+      "id": 54,
+      "verseKey": "72:1",
+      "surahNumber": 72,
+      "ayah": 1,
+      "startMs": 918852,
+      "endMs": 933216
+    },
+    {
+      "id": 55,
+      "verseKey": "72:2",
+      "surahNumber": 72,
+      "ayah": 2,
+      "startMs": 933216,
+      "endMs": 945303
+    },
+    {
+      "id": 56,
+      "verseKey": "72:3",
+      "surahNumber": 72,
+      "ayah": 3,
+      "startMs": 945303,
+      "endMs": 954814
+    },
+    {
+      "id": 57,
+      "verseKey": "72:4",
+      "surahNumber": 72,
+      "ayah": 4,
+      "startMs": 954814,
+      "endMs": 961601
+    },
+    {
+      "id": 58,
+      "verseKey": "109:1",
+      "surahNumber": 109,
+      "ayah": 1,
+      "startMs": 964474,
+      "endMs": 972190
+    },
+    {
+      "id": 59,
+      "verseKey": "109:2",
+      "surahNumber": 109,
+      "ayah": 2,
+      "startMs": 972190,
+      "endMs": 979824
+    },
+    {
+      "id": 60,
+      "verseKey": "109:3",
+      "surahNumber": 109,
+      "ayah": 3,
+      "startMs": 979824,
+      "endMs": 988268
+    },
+    {
+      "id": 61,
+      "verseKey": "109:4",
+      "surahNumber": 109,
+      "ayah": 4,
+      "startMs": 988268,
+      "endMs": 995101
+    },
+    {
+      "id": 62,
+      "verseKey": "109:5",
+      "surahNumber": 109,
+      "ayah": 5,
+      "startMs": 995101,
+      "endMs": 1003761
+    },
+    {
+      "id": 63,
+      "verseKey": "109:6",
+      "surahNumber": 109,
+      "ayah": 6,
+      "startMs": 1003761,
+      "endMs": 1009368
+    },
+    {
+      "id": 64,
+      "verseKey": "112:1",
+      "surahNumber": 112,
+      "ayah": 1,
+      "startMs": 1012241,
+      "endMs": 1015298
+    },
+    {
+      "id": 65,
+      "verseKey": "112:2",
+      "surahNumber": 112,
+      "ayah": 2,
+      "startMs": 1015298,
+      "endMs": 1017894
+    },
+    {
+      "id": 66,
+      "verseKey": "112:3",
+      "surahNumber": 112,
+      "ayah": 3,
+      "startMs": 1017894,
+      "endMs": 1020952
+    },
+    {
+      "id": 67,
+      "verseKey": "112:4",
+      "surahNumber": 112,
+      "ayah": 4,
+      "startMs": 1020952,
+      "endMs": 1025769
+    },
+    {
+      "id": 68,
+      "verseKey": "113:1",
+      "surahNumber": 113,
+      "ayah": 1,
+      "startMs": 1028642,
+      "endMs": 1032202
+    },
+    {
+      "id": 69,
+      "verseKey": "113:2",
+      "surahNumber": 113,
+      "ayah": 2,
+      "startMs": 1032202,
+      "endMs": 1035927
+    },
+    {
+      "id": 70,
+      "verseKey": "113:3",
+      "surahNumber": 113,
+      "ayah": 3,
+      "startMs": 1035927,
+      "endMs": 1041098
+    },
+    {
+      "id": 71,
+      "verseKey": "113:4",
+      "surahNumber": 113,
+      "ayah": 4,
+      "startMs": 1041098,
+      "endMs": 1047264
+    },
+    {
+      "id": 72,
+      "verseKey": "113:5",
+      "surahNumber": 113,
+      "ayah": 5,
+      "startMs": 1047264,
+      "endMs": 1053015
+    },
+    {
+      "id": 73,
+      "verseKey": "114:1",
+      "surahNumber": 114,
+      "ayah": 1,
+      "startMs": 1055888,
+      "endMs": 1062157
+    },
+    {
+      "id": 74,
+      "verseKey": "114:2",
+      "surahNumber": 114,
+      "ayah": 2,
+      "startMs": 1062157,
+      "endMs": 1067574
+    },
+    {
+      "id": 75,
+      "verseKey": "114:3",
+      "surahNumber": 114,
+      "ayah": 3,
+      "startMs": 1067574,
+      "endMs": 1073074
+    },
+    {
+      "id": 76,
+      "verseKey": "114:4",
+      "surahNumber": 114,
+      "ayah": 4,
+      "startMs": 1073074,
+      "endMs": 1081272
+    },
+    {
+      "id": 77,
+      "verseKey": "114:5",
+      "surahNumber": 114,
+      "ayah": 5,
+      "startMs": 1081272,
+      "endMs": 1089398
+    },
+    {
+      "id": 78,
+      "verseKey": "114:6",
+      "surahNumber": 114,
+      "ayah": 6,
+      "startMs": 1089398,
+      "endMs": 1097796
+    }
+  ]
+}

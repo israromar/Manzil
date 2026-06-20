@@ -1,10 +1,22 @@
 import { useMemo } from 'react';
 
+import { getManzilTimings } from '../services/manzilTimings';
 import { useAppAudio } from './useAudioPlayer';
-import type { ManzilVerse } from '../types/manzil';
-import { getActiveVerseId } from '../utils/verseTiming';
+import { buildVerseSyncTimeline, getActiveVerseId } from '../utils/verseTiming';
 
-export function useVerseSync(verses: ManzilVerse[]) {
-  const { positionMs } = useAppAudio();
-  return useMemo(() => getActiveVerseId(positionMs / 1000, verses), [positionMs, verses]);
+export function useVerseSync() {
+  const { positionMs, durationMs } = useAppAudio();
+  const timings = useMemo(() => getManzilTimings(), []);
+  const timeline = useMemo(() => buildVerseSyncTimeline(timings), [timings]);
+
+  return useMemo(
+    () =>
+      getActiveVerseId(
+        positionMs,
+        timeline,
+        timings,
+        durationMs > 0 ? durationMs : undefined,
+      ),
+    [durationMs, positionMs, timeline, timings],
+  );
 }

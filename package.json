@@ -30,7 +30,8 @@
     "ios": "expo run:ios",
     "web": "expo start --web",
     "typecheck": "tsc --noEmit",
-    "generate:data": "node --experimental-strip-types ./scripts/generate-manzil-json.ts"
+    "generate:data": "node --experimental-strip-types ./scripts/generate-manzil-json.ts",
+    "generate:timings": "node --experimental-strip-types ./scripts/generate-manzil-timings.ts"
   },
   "private": true
 }

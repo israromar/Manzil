@@ -28,7 +28,7 @@ export default function ReaderScreen() {
   const { settings } = useSettings();
   const { progress, setReadingProgress } = useProgressContext();
   const { verses, sections } = useManzil();
-  const activeVerseId = useVerseSync(verses);
+  const activeVerseId = useVerseSync();
   const flatListRef = useRef<FlatList<ManzilVerse>>(null);
   const theme = THEMES[settings.theme];
   const isMushaf = settings.layoutMode === 'mushaf_page';
