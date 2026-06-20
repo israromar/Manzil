@@ -15,6 +15,25 @@
     "plugins": [
       "expo-router",
       [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#141414",
+          "image": "./assets/images/icon.png",
+          "imageWidth": 220,
+          "resizeMode": "contain",
+          "dark": {
+            "backgroundColor": "#141414",
+            "image": "./assets/images/icon.png"
+          },
+          "ios": {
+            "backgroundColor": "#141414",
+            "image": "./assets/images/splash-bg.jpg",
+            "enableFullScreenImage_legacy": true,
+            "resizeMode": "cover"
+          }
+        }
+      ],
+      [
         "expo-audio",
         {
           "enableBackgroundPlayback": true
@@ -24,8 +43,11 @@
     "ios": {
       "supportsTablet": true,
       "infoPlist": {
-        "UIBackgroundModes": ["audio"]
-      }
+        "UIBackgroundModes": [
+          "audio"
+        ]
+      },
+      "bundleIdentifier": "com.israromar.manzil"
     },
     "android": {
       "adaptiveIcon": {

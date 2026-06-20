@@ -1,15 +1,17 @@
 import { createContext, useContext, useEffect, useMemo, useState, type PropsWithChildren } from 'react';
 
+import { DEFAULT_READING_FORMAT_ID } from '../constants/readingFormats';
 import { STORAGE_KEYS, getStoredValue, setStoredValue } from '../services/storage';
-import type { FontSizeMode, LineHeightMode, SettingsState, ThemeMode, TranslationMode } from '../types/settings';
+import type { FontSizeMode, LayoutMode, LineHeightMode, ReadingFormatId, SettingsState, ThemeMode, TranslationMode } from '../types/settings';
+import { applyReadingFormat, normalizeSettingsState } from '../utils/settingsMigration';
 
-const DEFAULT_SETTINGS: SettingsState = {
+const DEFAULT_SETTINGS: SettingsState = normalizeSettingsState({
   theme: 'dark',
   fontSize: 'medium',
   lineHeight: 'comfortable',
-  translationMode: 'arabic_english',
+  readingFormatId: DEFAULT_READING_FORMAT_ID,
   autoScroll: true,
-};
+});
 
 interface SettingsContextValue {
   ready: boolean;
@@ -18,6 +20,8 @@ interface SettingsContextValue {
   setFontSize: (fontSize: FontSizeMode) => void;
   setLineHeight: (lineHeight: LineHeightMode) => void;
   setTranslationMode: (translationMode: TranslationMode) => void;
+  setLayoutMode: (layoutMode: LayoutMode) => void;
+  setReadingFormat: (formatId: ReadingFormatId) => void;
   setAutoScroll: (autoScroll: boolean) => void;
 }
 
@@ -29,7 +33,7 @@ export function SettingsProvider({ children }: PropsWithChildren) {
 
   useEffect(() => {
     getStoredValue(STORAGE_KEYS.settings, DEFAULT_SETTINGS).then((value) => {
-      setSettings(value);
+      setSettings(normalizeSettingsState(value));
       setReady(true);
     });
   }, []);
@@ -47,7 +51,10 @@ export function SettingsProvider({ children }: PropsWithChildren) {
       setTheme: (theme) => setSettings((prev) => ({ ...prev, theme })),
       setFontSize: (fontSize) => setSettings((prev) => ({ ...prev, fontSize })),
       setLineHeight: (lineHeight) => setSettings((prev) => ({ ...prev, lineHeight })),
-      setTranslationMode: (translationMode) => setSettings((prev) => ({ ...prev, translationMode })),
+      setTranslationMode: (translationMode) =>
+        setSettings((prev) => normalizeSettingsState({ ...prev, translationMode })),
+      setLayoutMode: (layoutMode) => setSettings((prev) => normalizeSettingsState({ ...prev, layoutMode })),
+      setReadingFormat: (formatId) => setSettings((prev) => ({ ...prev, ...applyReadingFormat(formatId) })),
       setAutoScroll: (autoScroll) => setSettings((prev) => ({ ...prev, autoScroll })),
     }),
     [ready, settings]

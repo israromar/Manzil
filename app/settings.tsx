@@ -1,11 +1,13 @@
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { useRouter } from 'expo-router';
 
 import { ScreenBackground } from '../src/components/ui/ScreenBackground';
 import { SegmentedControl } from '../src/components/ui/SegmentedControl';
+import { getFormatById } from '../src/constants/readingFormats';
 import { IMAGES } from '../src/constants/images';
 import { THEMES } from '../src/constants/themes';
 import { useSettings } from '../src/hooks/useSettings';
-import type { FontSizeMode, LineHeightMode, ThemeMode, TranslationMode } from '../src/types/settings';
+import type { FontSizeMode, LineHeightMode, ThemeMode } from '../src/types/settings';
 
 function SettingRow<T extends string>({
   title,
@@ -50,20 +52,26 @@ const LINE_LABELS: Record<LineHeightMode, string> = {
   spacious: 'Spacious',
 };
 
-const TRANSLATION_LABELS: Record<TranslationMode, string> = {
-  arabic: 'Arabic',
-  arabic_urdu: 'Urdu',
-  arabic_english: 'English',
-};
-
 export default function SettingsScreen() {
-  const { settings, setAutoScroll, setFontSize, setLineHeight, setTheme, setTranslationMode } = useSettings();
+  const router = useRouter();
+  const { settings, setAutoScroll, setFontSize, setLineHeight, setTheme } = useSettings();
   const theme = THEMES[settings.theme];
+  const readingFormat = getFormatById(settings.readingFormatId);
 
   return (
     <View style={[styles.root, { backgroundColor: theme.background }]}>
       <ScreenBackground source={IMAGES.settingsBg} opacity={0.2} />
       <ScrollView style={styles.container} contentContainerStyle={styles.content}>
+      <Pressable
+        accessibilityRole="button"
+        style={[styles.formatRow, { borderColor: theme.border, backgroundColor: theme.surface }]}
+        onPress={() => router.push('/reading-format')}>
+        <View style={styles.formatText}>
+          <Text style={{ color: theme.text, fontWeight: '600' }}>Reading format</Text>
+          <Text style={{ color: theme.subtext, marginTop: 4, fontSize: 13 }}>{readingFormat?.title ?? 'Mushaf page'}</Text>
+        </View>
+        <Text style={{ color: theme.accent, fontWeight: '600' }}>Change</Text>
+      </Pressable>
       <SettingRow<ThemeMode>
         title="Theme"
         value={settings.theme}
@@ -85,13 +93,6 @@ export default function SettingsScreen() {
         onChange={setLineHeight}
         formatLabel={(value) => LINE_LABELS[value]}
       />
-      <SettingRow<TranslationMode>
-        title="Translation"
-        value={settings.translationMode}
-        options={['arabic', 'arabic_urdu', 'arabic_english']}
-        onChange={setTranslationMode}
-        formatLabel={(value) => TRANSLATION_LABELS[value]}
-      />
       <Pressable
         accessibilityRole="button"
         style={[styles.autoScroll, { borderColor: theme.border, backgroundColor: theme.surface }]}
@@ -110,6 +111,16 @@ const styles = StyleSheet.create({
   content: { padding: 16, paddingBottom: 40 },
   row: { marginBottom: 22 },
   rowLabel: { fontSize: 14, fontWeight: '600', marginBottom: 10 },
+  formatRow: {
+    marginBottom: 22,
+    borderWidth: 1,
+    borderRadius: 14,
+    padding: 16,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  formatText: { flex: 1, paddingRight: 12 },
   autoScroll: {
     marginTop: 4,
     borderWidth: 1,

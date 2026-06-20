@@ -1,6 +1,6 @@
 # Expo HAS CHANGED
 
-Read the exact versioned docs at https://docs.expo.dev/versions/v56.0.0/ before writing any code.
+Read the exact versioned docs at [https://docs.expo.dev/versions/v56.0.0/](https://docs.expo.dev/versions/v56.0.0/) before writing any code.
 
 # Dependency Approval Rule
 
@@ -127,7 +127,7 @@ Use Expo Router structure with routes in project-root `app/` and shared logic un
 
 app/
 
-- \_layout.tsx
+- layout.tsx
 - index.tsx
 - home.tsx
 - reader.tsx

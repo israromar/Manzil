@@ -1,9 +1,24 @@
-import { createContext, useContext, useEffect, useMemo, useState, type PropsWithChildren } from 'react';
-import { useAudioPlayer, useAudioPlayerStatus, setAudioModeAsync } from 'expo-audio';
-import { Platform } from 'react-native';
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useMemo,
+  useState,
+  type PropsWithChildren,
+} from 'react';
+import {
+  useAudioPlayer,
+  useAudioPlayerStatus,
+  setAudioModeAsync,
+} from 'expo-audio';
+import { Platform, Image } from 'react-native';
 
 import { MANZIL_AUDIO_URL } from '../constants/audio';
-import { getOfflineAudioInfo, getOfflineAudioUri } from '../services/audioDownload';
+import { IMAGES } from '../constants/images';
+import {
+  getOfflineAudioInfo,
+  getOfflineAudioUri,
+} from '../services/audioDownload';
 
 type DownloadStatus = 'none' | 'downloading' | 'downloaded';
 
@@ -52,7 +67,10 @@ export function AudioProvider({ children }: PropsWithChildren) {
   }, []);
 
   useEffect(() => {
-    const targetSource = source === 'offline' && downloadStatus === 'downloaded' ? getOfflineAudioUri() : MANZIL_AUDIO_URL;
+    const targetSource =
+      source === 'offline' && downloadStatus === 'downloaded'
+        ? getOfflineAudioUri()
+        : MANZIL_AUDIO_URL;
     player.replace(targetSource);
   }, [downloadStatus, player, source]);
 
@@ -60,15 +78,22 @@ export function AudioProvider({ children }: PropsWithChildren) {
     if (!status.playing) return;
     player.setActiveForLockScreen(
       true,
-      { title: 'Manzil', artist: 'Manzil App' },
-      { showSeekForward: true, showSeekBackward: true }
+      {
+        title: 'Manzil',
+        artist: 'Manzil Recitation',
+        albumTitle: 'Manzil',
+        artworkUrl: Image.resolveAssetSource(IMAGES.audioThumb).uri,
+      },
+      { showSeekForward: true, showSeekBackward: true },
     );
   }, [player, status.playing]);
 
   useEffect(() => {
     if (Platform.OS !== 'android') return;
     // Best-effort permission request for media notification controls.
-    void import('expo-audio').then((module) => module.requestNotificationPermissionsAsync().catch(() => undefined));
+    void import('expo-audio').then((module) =>
+      module.requestNotificationPermissionsAsync().catch(() => undefined),
+    );
   }, []);
 
   const value = useMemo<AudioContextValue>(
@@ -103,10 +128,21 @@ export function AudioProvider({ children }: PropsWithChildren) {
         setDownloadProgress(progress);
       },
     }),
-    [downloadProgress, downloadStatus, playbackRate, player, source, status.currentTime, status.duration, status.playing]
+    [
+      downloadProgress,
+      downloadStatus,
+      playbackRate,
+      player,
+      source,
+      status.currentTime,
+      status.duration,
+      status.playing,
+    ],
   );
 
-  return <AudioContext.Provider value={value}>{children}</AudioContext.Provider>;
+  return (
+    <AudioContext.Provider value={value}>{children}</AudioContext.Provider>
+  );
 }
 
 export function useAudioContext() {
