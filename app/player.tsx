@@ -3,10 +3,8 @@ import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { ArtworkCard } from '../src/components/player/ArtworkCard';
 import { PlayerControls } from '../src/components/PlayerControls';
 import { PrimaryButton } from '../src/components/ui/PrimaryButton';
-import { ScreenBackground } from '../src/components/ui/ScreenBackground';
 import { SecondaryButton } from '../src/components/ui/SecondaryButton';
 import { SegmentedControl } from '../src/components/ui/SegmentedControl';
-import { IMAGES } from '../src/constants/images';
 import { THEMES } from '../src/constants/themes';
 import { useAppAudio } from '../src/hooks/useAudioPlayer';
 import { useSettings } from '../src/hooks/useSettings';
@@ -34,8 +32,7 @@ export default function PlayerScreen() {
   };
 
   return (
-    <View style={[styles.root, { backgroundColor: theme.background }]}>
-      <ScreenBackground source={IMAGES.splashBg} opacity={0.14} />
+    <View style={styles.root}>
       <ScrollView style={styles.container} contentContainerStyle={styles.content}>
       <ArtworkCard />
       <Text style={[styles.title, { color: theme.text }]}>Manzil Recitation</Text>

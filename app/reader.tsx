@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef } from 'react';
 import {
   FlatList,
-  ImageBackground,
   NativeScrollEvent,
   NativeSyntheticEvent,
   StyleSheet,
@@ -15,8 +14,7 @@ import { MushafReader } from '../src/components/reader/MushafReader';
 import { ReadingFormatButton } from '../src/components/reader/ReadingFormatButton';
 import { SectionHeader } from '../src/components/reader/SectionHeader';
 import { VerseRow } from '../src/components/VerseRow';
-import { IMAGES } from '../src/constants/images';
-import { RADIUS, THEMES } from '../src/constants/themes';
+import { THEMES } from '../src/constants/themes';
 import { useProgressContext } from '../src/context/ProgressContext';
 import { useSettings } from '../src/hooks/useSettings';
 import { useManzil } from '../src/hooks/useManzil';
@@ -82,7 +80,7 @@ export default function ReaderScreen() {
   }, []);
 
   return (
-    <View style={[styles.container, { backgroundColor: theme.background }]}>
+    <View style={styles.container}>
       <View style={styles.scrollArea}>
         {isMushaf ? (
           <MushafReader
@@ -111,18 +109,6 @@ export default function ReaderScreen() {
             }}
             ListHeaderComponent={
               <View style={styles.header}>
-                <ImageBackground
-                  source={IMAGES.readerHeader}
-                  style={styles.banner}
-                  imageStyle={styles.bannerImage}
-                >
-                  <View
-                    style={[
-                      styles.bannerOverlay,
-                      { backgroundColor: theme.background },
-                    ]}
-                  />
-                </ImageBackground>
                 <View style={styles.headerRow}>
                   <View style={styles.headerText}>
                     <Text style={[styles.headerTitle, { color: theme.text }]}>
@@ -156,21 +142,11 @@ export default function ReaderScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1 },
+  container: { flex: 1, backgroundColor: 'transparent' },
   scrollArea: { flex: 1 },
-  list: { flex: 1 },
+  list: { flex: 1, backgroundColor: 'transparent' },
   listContent: { paddingTop: 12 },
   header: { marginHorizontal: 16, marginBottom: 8 },
-  banner: {
-    height: 120,
-    borderRadius: RADIUS.card,
-    overflow: 'hidden',
-    marginBottom: 14,
-    borderWidth: 1,
-    borderColor: 'transparent',
-  },
-  bannerImage: { resizeMode: 'cover' },
-  bannerOverlay: { ...StyleSheet.absoluteFill, opacity: 0.55 },
   headerRow: {
     flexDirection: 'row',
     alignItems: 'flex-start',

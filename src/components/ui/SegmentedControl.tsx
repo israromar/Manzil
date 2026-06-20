@@ -20,7 +20,12 @@ export function SegmentedControl<T extends string>({
   const theme = THEMES[settings.theme];
 
   return (
-    <View style={styles.row}>
+    <View
+      style={[
+        styles.track,
+        { backgroundColor: theme.background, borderColor: theme.border },
+      ]}
+    >
       {options.map((option) => {
         const active = option === value;
         return (
@@ -31,12 +36,23 @@ export function SegmentedControl<T extends string>({
             onPress={() => onChange(option)}
             style={[
               styles.pill,
-              {
-                borderColor: active ? theme.accent : theme.border,
-                backgroundColor: active ? theme.accent : theme.surface,
+              active && {
+                backgroundColor: theme.accent,
+                shadowColor: theme.accentMuted,
+                shadowOffset: { width: 0, height: 4 },
+                shadowOpacity: 0.35,
+                shadowRadius: 8,
+                elevation: 3,
               },
-            ]}>
-            <Text style={{ color: active ? theme.accentOn : theme.text, fontWeight: active ? '600' : '400' }}>
+            ]}
+          >
+            <Text
+              style={{
+                color: active ? theme.accentOn : theme.subtext,
+                fontWeight: active ? '700' : '500',
+                fontSize: 13,
+              }}
+            >
               {formatLabel(option)}
             </Text>
           </Pressable>
@@ -47,11 +63,22 @@ export function SegmentedControl<T extends string>({
 }
 
 const styles = StyleSheet.create({
-  row: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
-  pill: {
-    borderRadius: RADIUS.pill,
+  track: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 6,
+    borderRadius: RADIUS.button,
     borderWidth: 1,
-    paddingHorizontal: 12,
-    paddingVertical: 8,
+    padding: 4,
+  },
+  pill: {
+    flexGrow: 1,
+    flexBasis: '22%',
+    minWidth: 52,
+    borderRadius: RADIUS.pill,
+    paddingHorizontal: 10,
+    paddingVertical: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });

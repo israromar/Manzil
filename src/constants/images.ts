@@ -1,12 +1,11 @@
 // Custom brand assets: icon.png, splash-bg.jpg (generated for Manzil)
-// Unsplash License: https://unsplash.com/license — hero-home, player-artwork, reader-header, settings-bg
+// Unsplash License: https://unsplash.com/license
+// appBackground: Mohammad Wali Masjid, Delhi (15th c.) — unsplash.com/photos/vAT2oIj8-M8
 
 export const IMAGES = {
   icon: require('../../assets/images/icon.png'),
-  heroHome: require('../../assets/images/hero-home.jpg'),
-  playerArtwork: require('../../assets/images/player-artwork.jpg'),
-  readerHeader: require('../../assets/images/reader-header.jpg'),
-  settingsBg: require('../../assets/images/settings-bg.jpg'),
+  appBackground: require('../../assets/images/app-bg.jpg'),
   splashBg: require('../../assets/images/splash-bg.jpg'),
+  playerArtwork: require('../../assets/images/player-artwork.jpg'),
   audioThumb: require('../../assets/images/audio-thumb.jpg'),
 } as const;
