@@ -4,7 +4,7 @@ import { STORAGE_KEYS, getStoredValue, setStoredValue } from '../services/storag
 import type { FontSizeMode, LineHeightMode, SettingsState, ThemeMode, TranslationMode } from '../types/settings';
 
 const DEFAULT_SETTINGS: SettingsState = {
-  theme: 'light',
+  theme: 'dark',
   fontSize: 'medium',
   lineHeight: 'comfortable',
   translationMode: 'arabic_english',

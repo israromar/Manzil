@@ -1,7 +1,7 @@
 import { memo } from 'react';
 import { PixelRatio, StyleSheet, Text, View } from 'react-native';
 
-import { ARABIC_FONT_SIZE, LINE_HEIGHT_MULTIPLIER, THEMES, TRANSLATION_FONT_SIZE } from '../constants/themes';
+import { ARABIC_FONT_SIZE, LINE_HEIGHT_MULTIPLIER, RADIUS, THEMES, TRANSLATION_FONT_SIZE } from '../constants/themes';
 import { useSettings } from '../hooks/useSettings';
 import type { ManzilVerse } from '../types/manzil';
 
@@ -26,10 +26,14 @@ function VerseRowBase({ verse, active }: VerseRowProps) {
       style={[
         styles.container,
         {
-          backgroundColor: active ? theme.highlight : theme.card,
-          borderColor: theme.border,
+          backgroundColor: active ? theme.highlight : theme.surface,
+          borderColor: active ? theme.accent : theme.border,
         },
       ]}>
+      {active && <View style={[styles.accentBar, { backgroundColor: theme.accent }]} />}
+      <Text style={[styles.meta, { color: theme.subtext }]}>
+        {verse.surahName} • {verse.ayah}
+      </Text>
       <Text style={[styles.arabic, { color: theme.text, fontSize: arabicSize, lineHeight: arabicSize * lineHeight }]}>
         {verse.arabic}
       </Text>
@@ -54,8 +58,22 @@ const styles = StyleSheet.create({
     marginHorizontal: 16,
     marginVertical: 6,
     padding: 16,
-    borderRadius: 12,
+    paddingLeft: 20,
+    borderRadius: RADIUS.card,
     borderWidth: 1,
+    overflow: 'hidden',
+  },
+  accentBar: {
+    position: 'absolute',
+    left: 0,
+    top: 0,
+    bottom: 0,
+    width: 4,
+  },
+  meta: {
+    fontSize: 12,
+    fontWeight: '600',
+    marginBottom: 8,
   },
   arabic: {
     writingDirection: 'rtl',

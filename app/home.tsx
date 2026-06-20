@@ -1,6 +1,12 @@
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useRouter } from 'expo-router';
 
+import { ArchCard } from '../src/components/ui/ArchCard';
+import { HeroImage } from '../src/components/ui/HeroImage';
+import { PrimaryButton } from '../src/components/ui/PrimaryButton';
+import { SecondaryButton } from '../src/components/ui/SecondaryButton';
+import { StatusChip } from '../src/components/ui/StatusChip';
+import { IMAGES } from '../src/constants/images';
 import { THEMES } from '../src/constants/themes';
 import { useAppAudio } from '../src/hooks/useAudioPlayer';
 import { useSettings } from '../src/hooks/useSettings';
@@ -14,57 +20,52 @@ export default function HomeScreen() {
   const theme = THEMES[settings.theme];
 
   const canContinue = progress.lastVerseId !== null;
+  const downloadLabel =
+    downloadStatus === 'downloaded'
+      ? 'Available offline'
+      : downloadStatus === 'downloading'
+        ? `Downloading ${Math.round(downloadProgress * 100)}%`
+        : 'Stream only';
 
   return (
-    <View style={[styles.container, { backgroundColor: theme.background }]}>
-      <Text style={[styles.headingArabic, { color: theme.text }]}>منزل</Text>
-      <Text style={[styles.headingEnglish, { color: theme.subtext }]}>Your daily Manzil companion</Text>
+    <ScrollView style={[styles.container, { backgroundColor: theme.background }]} contentContainerStyle={styles.content}>
+      <HeroImage source={IMAGES.heroHome} height={240}>
+        <Text style={[styles.headingArabic, { color: theme.accent }]}>منزل</Text>
+        <Text style={[styles.headingEnglish, { color: theme.text }]}>Your daily Manzil companion</Text>
+      </HeroImage>
 
-      <Pressable style={[styles.action, { backgroundColor: theme.accent }]} onPress={() => router.push('/reader')}>
-        <Text style={styles.actionText}>Read Manzil</Text>
-      </Pressable>
-      <Pressable style={[styles.action, { backgroundColor: theme.card, borderColor: theme.border }]} onPress={() => router.push('/player')}>
-        <Text style={[styles.actionTextSecondary, { color: theme.text }]}>Listen to Manzil</Text>
-      </Pressable>
-      <Pressable
-        disabled={!canContinue}
-        style={[styles.action, { backgroundColor: canContinue ? theme.card : theme.border, borderColor: theme.border }]}
-        onPress={() => router.push({ pathname: '/reader', params: { verseId: String(progress.lastVerseId ?? 1) } })}>
-        <Text style={[styles.actionTextSecondary, { color: theme.text }]}>Continue</Text>
-      </Pressable>
+      {canContinue && (
+        <ArchCard
+          title="Continue reading"
+          subtitle={`Resume from verse ${progress.lastVerseId}`}
+          actionLabel="Continue"
+          style={styles.archCard}
+          onPress={() => router.push({ pathname: '/reader', params: { verseId: String(progress.lastVerseId) } })}
+        />
+      )}
 
-      <View style={[styles.infoCard, { backgroundColor: theme.card, borderColor: theme.border }]}>
-        <Text style={[styles.infoTitle, { color: theme.text }]}>Last read position</Text>
-        <Text style={{ color: theme.subtext }}>
-          {canContinue ? `Verse ${progress.lastVerseId}` : 'No reading progress yet'}
-        </Text>
-      </View>
-      <View style={[styles.infoCard, { backgroundColor: theme.card, borderColor: theme.border }]}>
-        <Text style={[styles.infoTitle, { color: theme.text }]}>Download status</Text>
-        <Text style={{ color: theme.subtext }}>
-          {downloadStatus === 'downloaded'
-            ? 'Available offline'
-            : downloadStatus === 'downloading'
-              ? `Downloading ${Math.round(downloadProgress * 100)}%`
-              : 'Stream only'}
-        </Text>
+      <PrimaryButton label="Read Manzil" style={styles.button} onPress={() => router.push('/reader')} />
+      <SecondaryButton label="Listen to Manzil" style={styles.button} onPress={() => router.push('/player')} />
+
+      <View style={styles.chips}>
+        <StatusChip label={canContinue ? `Verse ${progress.lastVerseId}` : 'No progress yet'} />
+        <StatusChip label={downloadLabel} />
       </View>
 
-      <Pressable style={styles.settingsBtn} onPress={() => router.push('/settings')}>
-        <Text style={{ color: theme.accent }}>Settings</Text>
+      <Pressable accessibilityRole="button" style={styles.settingsBtn} onPress={() => router.push('/settings')}>
+        <Text style={{ color: theme.accent, fontWeight: '600' }}>Settings</Text>
       </Pressable>
-    </View>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, paddingHorizontal: 20, paddingTop: 72 },
-  headingArabic: { fontSize: 40, textAlign: 'center', writingDirection: 'rtl' },
-  headingEnglish: { fontSize: 16, textAlign: 'center', marginTop: 8, marginBottom: 30 },
-  action: { borderRadius: 12, paddingVertical: 16, alignItems: 'center', marginBottom: 12, borderWidth: 1 },
-  actionText: { color: '#FFFFFF', fontSize: 18, fontWeight: '700' },
-  actionTextSecondary: { fontSize: 18, fontWeight: '600' },
-  infoCard: { borderRadius: 12, borderWidth: 1, padding: 14, marginTop: 8 },
-  infoTitle: { fontSize: 14, fontWeight: '600', marginBottom: 4 },
-  settingsBtn: { marginTop: 20, alignSelf: 'center' },
+  container: { flex: 1 },
+  content: { paddingHorizontal: 20, paddingTop: 56, paddingBottom: 40 },
+  headingArabic: { fontSize: 44, fontWeight: '700', textAlign: 'left', writingDirection: 'rtl' },
+  headingEnglish: { fontSize: 16, marginTop: 6, fontWeight: '500' },
+  archCard: { marginBottom: 16 },
+  button: { marginBottom: 12 },
+  chips: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginTop: 8 },
+  settingsBtn: { marginTop: 24, alignSelf: 'center', padding: 8 },
 });

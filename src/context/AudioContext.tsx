@@ -30,6 +30,7 @@ export function AudioProvider({ children }: PropsWithChildren) {
   const [source, setSource] = useState<'stream' | 'offline'>('stream');
   const [downloadStatus, setDownloadStatus] = useState<DownloadStatus>('none');
   const [downloadProgress, setDownloadProgress] = useState(0);
+  const [playbackRate, setPlaybackRateState] = useState(1);
   const player = useAudioPlayer(MANZIL_AUDIO_URL, { updateInterval: 500 });
   const status = useAudioPlayerStatus(player);
 
@@ -76,13 +77,14 @@ export function AudioProvider({ children }: PropsWithChildren) {
       isPlaying: status.playing,
       positionMs: Math.round(status.currentTime * 1000),
       durationMs: Math.round(status.duration * 1000),
-      playbackRate: player.playbackRate,
+      playbackRate,
       source,
       downloadStatus,
       downloadProgress,
       setSource,
       setPlaybackRate: (rate) => {
-        player.playbackRate = rate;
+        player.setPlaybackRate(rate);
+        setPlaybackRateState(rate);
       },
       seekBy: (seconds) => {
         void player.seekTo(Math.max(0, (status.currentTime || 0) + seconds));
@@ -101,7 +103,7 @@ export function AudioProvider({ children }: PropsWithChildren) {
         setDownloadProgress(progress);
       },
     }),
-    [downloadProgress, downloadStatus, player, source, status.currentTime, status.duration, status.playing]
+    [downloadProgress, downloadStatus, playbackRate, player, source, status.currentTime, status.duration, status.playing]
   );
 
   return <AudioContext.Provider value={value}>{children}</AudioContext.Provider>;

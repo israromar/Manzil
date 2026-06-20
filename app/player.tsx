@@ -1,6 +1,12 @@
-import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
 
+import { ArtworkCard } from '../src/components/player/ArtworkCard';
 import { PlayerControls } from '../src/components/PlayerControls';
+import { PrimaryButton } from '../src/components/ui/PrimaryButton';
+import { ScreenBackground } from '../src/components/ui/ScreenBackground';
+import { SecondaryButton } from '../src/components/ui/SecondaryButton';
+import { SegmentedControl } from '../src/components/ui/SegmentedControl';
+import { IMAGES } from '../src/constants/images';
 import { THEMES } from '../src/constants/themes';
 import { useAppAudio } from '../src/hooks/useAudioPlayer';
 import { useSettings } from '../src/hooks/useSettings';
@@ -28,46 +34,47 @@ export default function PlayerScreen() {
   };
 
   return (
-    <View style={[styles.container, { backgroundColor: theme.background }]}>
-      <Image source={{ uri: 'https://dummyimage.com/500x500/1a1a1a/ffffff&text=Manzil' }} style={styles.artwork} />
+    <View style={[styles.root, { backgroundColor: theme.background }]}>
+      <ScreenBackground source={IMAGES.splashBg} opacity={0.14} />
+      <ScrollView style={styles.container} contentContainerStyle={styles.content}>
+      <ArtworkCard />
       <Text style={[styles.title, { color: theme.text }]}>Manzil Recitation</Text>
       <Text style={[styles.subtitle, { color: theme.subtext }]}>Stream and listen with focus</Text>
 
       <PlayerControls />
-      <View style={styles.sourceRow}>
-        <Pressable style={[styles.sourceBtn, { borderColor: theme.border, backgroundColor: source === 'stream' ? theme.accent : 'transparent' }]} onPress={() => setSource('stream')}>
-          <Text style={{ color: source === 'stream' ? '#fff' : theme.text }}>Stream</Text>
-        </Pressable>
-        <Pressable
-          disabled={downloadStatus !== 'downloaded'}
-          style={[styles.sourceBtn, { borderColor: theme.border, backgroundColor: source === 'offline' ? theme.accent : 'transparent', opacity: downloadStatus === 'downloaded' ? 1 : 0.5 }]}
-          onPress={() => setSource('offline')}>
-          <Text style={{ color: source === 'offline' ? '#fff' : theme.text }}>Offline</Text>
-        </Pressable>
-      </View>
+
+      <Text style={[styles.sectionLabel, { color: theme.subtext }]}>Audio source</Text>
+      <SegmentedControl
+        options={['stream', 'offline'] as const}
+        value={source}
+        onChange={(value) => {
+          if (value === 'offline' && downloadStatus !== 'downloaded') return;
+          setSource(value);
+        }}
+        formatLabel={(value) => (value === 'stream' ? 'Stream' : 'Offline')}
+      />
 
       {downloadStatus !== 'downloaded' ? (
-        <Pressable style={[styles.downloadButton, { backgroundColor: theme.accent }]} onPress={onDownloadPress} disabled={downloadStatus === 'downloading'}>
-          <Text style={styles.downloadText}>
-            {downloadStatus === 'downloading' ? `Downloading ${Math.round(downloadProgress * 100)}%` : 'Download for offline'}
-          </Text>
-        </Pressable>
+        <PrimaryButton
+          label={downloadStatus === 'downloading' ? `Downloading ${Math.round(downloadProgress * 100)}%` : 'Download for offline'}
+          style={styles.downloadButton}
+          onPress={onDownloadPress}
+          disabled={downloadStatus === 'downloading'}
+        />
       ) : (
-        <Pressable style={[styles.downloadButton, { backgroundColor: theme.card, borderColor: theme.border }]} onPress={onDeletePress}>
-          <Text style={[styles.downloadText, { color: theme.text }]}>Delete downloaded file</Text>
-        </Pressable>
+        <SecondaryButton label="Delete downloaded file" style={styles.downloadButton} onPress={onDeletePress} />
       )}
+      </ScrollView>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, paddingHorizontal: 20, paddingTop: 20 },
-  artwork: { width: '100%', aspectRatio: 1, borderRadius: 16, marginBottom: 18 },
+  root: { flex: 1 },
+  container: { flex: 1 },
+  content: { paddingHorizontal: 20, paddingTop: 12, paddingBottom: 40 },
   title: { fontSize: 24, fontWeight: '700' },
-  subtitle: { marginTop: 6, marginBottom: 18 },
-  downloadButton: { marginTop: 24, borderRadius: 12, borderWidth: 1, paddingVertical: 14, alignItems: 'center' },
-  downloadText: { color: '#fff', fontWeight: '700' },
-  sourceRow: { flexDirection: 'row', gap: 10, marginTop: 16 },
-  sourceBtn: { flex: 1, borderWidth: 1, borderRadius: 10, paddingVertical: 10, alignItems: 'center' },
+  subtitle: { marginTop: 6, marginBottom: 20 },
+  sectionLabel: { fontSize: 13, fontWeight: '600', marginTop: 24, marginBottom: 10, textTransform: 'uppercase', letterSpacing: 0.5 },
+  downloadButton: { marginTop: 20 },
 });
