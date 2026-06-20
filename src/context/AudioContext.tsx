@@ -1,8 +1,10 @@
 import {
   createContext,
+  useCallback,
   useContext,
   useEffect,
   useMemo,
+  useRef,
   useState,
   type PropsWithChildren,
 } from 'react';
@@ -22,6 +24,18 @@ import {
 
 type DownloadStatus = 'none' | 'downloading' | 'downloaded';
 
+const LOCK_SCREEN_METADATA = {
+  title: 'Manzil',
+  artist: 'Manzil Recitation',
+  albumTitle: 'Manzil',
+  artworkUrl: Image.resolveAssetSource(IMAGES.audioThumb).uri,
+};
+
+const LOCK_SCREEN_OPTIONS = {
+  showSeekForward: true,
+  showSeekBackward: true,
+} as const;
+
 interface AudioContextValue {
   player: ReturnType<typeof useAudioPlayer>;
   isPlaying: boolean;
@@ -33,6 +47,9 @@ interface AudioContextValue {
   downloadProgress: number;
   setSource: (source: 'stream' | 'offline') => void;
   setPlaybackRate: (rate: number) => void;
+  play: () => void;
+  pause: () => void;
+  togglePlayback: () => void;
   seekBy: (seconds: number) => void;
   seekTo: (seconds: number) => void;
   refreshDownloadState: () => Promise<void>;
@@ -46,8 +63,40 @@ export function AudioProvider({ children }: PropsWithChildren) {
   const [downloadStatus, setDownloadStatus] = useState<DownloadStatus>('none');
   const [downloadProgress, setDownloadProgress] = useState(0);
   const [playbackRate, setPlaybackRateState] = useState(1);
-  const player = useAudioPlayer(MANZIL_AUDIO_URL, { updateInterval: 500 });
+  const lockScreenEnabledRef = useRef(false);
+  const player = useAudioPlayer(MANZIL_AUDIO_URL, {
+    updateInterval: 500,
+    keepAudioSessionActive: true,
+  });
   const status = useAudioPlayerStatus(player);
+
+  const ensureLockScreenControls = useCallback(() => {
+    if (lockScreenEnabledRef.current) return;
+    lockScreenEnabledRef.current = true;
+    player.setActiveForLockScreen(
+      true,
+      LOCK_SCREEN_METADATA,
+      LOCK_SCREEN_OPTIONS,
+    );
+  }, [player]);
+
+  const play = useCallback(() => {
+    ensureLockScreenControls();
+    player.play();
+  }, [ensureLockScreenControls, player]);
+
+  const pause = useCallback(() => {
+    player.pause();
+  }, [player]);
+
+  const togglePlayback = useCallback(() => {
+    if (status.playing) {
+      player.pause();
+      return;
+    }
+    ensureLockScreenControls();
+    player.play();
+  }, [ensureLockScreenControls, player, status.playing]);
 
   useEffect(() => {
     setAudioModeAsync({
@@ -75,22 +124,14 @@ export function AudioProvider({ children }: PropsWithChildren) {
   }, [downloadStatus, player, source]);
 
   useEffect(() => {
-    if (!status.playing) return;
-    player.setActiveForLockScreen(
-      true,
-      {
-        title: 'Manzil',
-        artist: 'Manzil Recitation',
-        albumTitle: 'Manzil',
-        artworkUrl: Image.resolveAssetSource(IMAGES.audioThumb).uri,
-      },
-      { showSeekForward: true, showSeekBackward: true },
-    );
-  }, [player, status.playing]);
+    return () => {
+      lockScreenEnabledRef.current = false;
+      player.setActiveForLockScreen(false);
+    };
+  }, [player]);
 
   useEffect(() => {
     if (Platform.OS !== 'android') return;
-    // Best-effort permission request for media notification controls.
     void import('expo-audio').then((module) =>
       module.requestNotificationPermissionsAsync().catch(() => undefined),
     );
@@ -111,6 +152,9 @@ export function AudioProvider({ children }: PropsWithChildren) {
         player.setPlaybackRate(rate);
         setPlaybackRateState(rate);
       },
+      play,
+      pause,
+      togglePlayback,
       seekBy: (seconds) => {
         void player.seekTo(Math.max(0, (status.currentTime || 0) + seconds));
       },
@@ -131,12 +175,15 @@ export function AudioProvider({ children }: PropsWithChildren) {
     [
       downloadProgress,
       downloadStatus,
+      pause,
+      play,
       playbackRate,
       player,
       source,
       status.currentTime,
       status.duration,
       status.playing,
+      togglePlayback,
     ],
   );
 

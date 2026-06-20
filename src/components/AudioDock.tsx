@@ -1,5 +1,12 @@
 import { memo } from 'react';
-import { Image, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
+import {
+  Image,
+  Platform,
+  Pressable,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 import { useRouter } from 'expo-router';
 
 import { IMAGES } from '../constants/images';
@@ -14,13 +21,13 @@ function AudioDockBase() {
   const { settings } = useSettings();
   const theme = THEMES[settings.theme];
   const safeBottom = useAudioDockSafeBottom();
-  const { isPlaying, player, positionMs, durationMs, seekBy } = useAppAudio();
+  const { isPlaying, positionMs, durationMs, seekBy, togglePlayback } =
+    useAppAudio();
   const progress = durationMs > 0 ? Math.min(positionMs / durationMs, 1) : 0;
 
-  const togglePlayback = (event?: { stopPropagation?: () => void }) => {
+  const onTogglePlayback = (event?: { stopPropagation?: () => void }) => {
     event?.stopPropagation?.();
-    if (isPlaying) player.pause();
-    else player.play();
+    togglePlayback();
   };
 
   return (
@@ -32,67 +39,121 @@ function AudioDockBase() {
           borderTopColor: theme.border,
           paddingBottom: safeBottom,
         },
-      ]}>
+      ]}
+    >
       <Pressable
         accessibilityRole="button"
         accessibilityLabel="Open full audio player"
         accessibilityHint="Shows playback controls, speed, and offline download"
-        style={[styles.card, { backgroundColor: theme.surface, borderColor: theme.border }]}
-        onPress={() => router.push('/player')}>
+        style={[
+          styles.card,
+          { backgroundColor: theme.surface, borderColor: theme.border },
+        ]}
+        onPress={() => router.push('/player')}
+      >
         <View style={[styles.progressTrack, { backgroundColor: theme.border }]}>
-          <View style={{ flex: progress, backgroundColor: theme.accent, height: 4, borderRadius: 2 }} />
+          <View
+            style={{
+              flex: progress,
+              backgroundColor: theme.accent,
+              height: 4,
+              borderRadius: 2,
+            }}
+          />
           <View style={{ flex: 1 - progress, height: 4 }} />
         </View>
 
         <View style={styles.row}>
-          <Image source={IMAGES.audioThumb} style={[styles.artwork, { borderColor: theme.border }]} resizeMode="cover" accessibilityLabel="Manzil artwork" />
+          <Image
+            source={IMAGES.audioThumb}
+            style={[styles.artwork, { borderColor: theme.border }]}
+            resizeMode="cover"
+            accessibilityLabel="Manzil artwork"
+          />
 
           <View style={styles.textWrap}>
             <View style={styles.titleRow}>
-              <Text style={[styles.title, { color: theme.text }]} numberOfLines={1}>
+              <Text
+                style={[styles.title, { color: theme.text }]}
+                numberOfLines={1}
+              >
                 Manzil Recitation
               </Text>
               {isPlaying ? (
-                <View style={[styles.liveChip, { backgroundColor: theme.accentSoft, borderColor: theme.accent }]}>
-                  <View style={[styles.liveDot, { backgroundColor: theme.accent }]} />
-                  <Text style={[styles.liveText, { color: theme.accent }]}>Playing</Text>
+                <View
+                  style={[
+                    styles.liveChip,
+                    {
+                      backgroundColor: theme.accentSoft,
+                      borderColor: theme.accent,
+                    },
+                  ]}
+                >
+                  <View
+                    style={[styles.liveDot, { backgroundColor: theme.accent }]}
+                  />
+                  <Text style={[styles.liveText, { color: theme.accent }]}>
+                    Playing
+                  </Text>
                 </View>
               ) : null}
             </View>
             <Text style={[styles.subtitle, { color: theme.subtext }]}>
               {formatTime(positionMs / 1000)} / {formatTime(durationMs / 1000)}
             </Text>
-            <Text style={[styles.hint, { color: theme.subtext }]}>Tap for full player</Text>
+            <Text style={[styles.hint, { color: theme.subtext }]}>
+              Tap for full player
+            </Text>
           </View>
 
           <View style={styles.controls}>
             <Pressable
               accessibilityRole="button"
               accessibilityLabel="Rewind 10 seconds"
-              style={[styles.skipButton, { borderColor: theme.border, backgroundColor: theme.background }]}
+              style={[
+                styles.skipButton,
+                {
+                  borderColor: theme.border,
+                  backgroundColor: theme.background,
+                },
+              ]}
               onPress={(event) => {
                 event.stopPropagation();
                 seekBy(-10);
-              }}>
+              }}
+            >
               <Text style={[styles.skipText, { color: theme.text }]}>−10</Text>
             </Pressable>
 
             <Pressable
               accessibilityRole="button"
               accessibilityLabel={isPlaying ? 'Pause' : 'Play'}
-              style={[styles.playButton, { backgroundColor: theme.accent, borderColor: theme.accent }]}
-              onPress={togglePlayback}>
-              <Text style={[styles.playButtonText, { color: theme.accentOn }]}>{isPlaying ? '❚❚' : '▶'}</Text>
+              style={[
+                styles.playButton,
+                { backgroundColor: theme.accent, borderColor: theme.accent },
+              ]}
+              onPress={onTogglePlayback}
+            >
+              <Text style={[styles.playButtonText, { color: theme.accentOn }]}>
+                {isPlaying ? '❚❚' : '▶'}
+              </Text>
             </Pressable>
 
             <Pressable
               accessibilityRole="button"
               accessibilityLabel="Forward 10 seconds"
-              style={[styles.skipButton, { borderColor: theme.border, backgroundColor: theme.background }]}
+              style={[
+                styles.skipButton,
+                {
+                  borderColor: theme.border,
+                  backgroundColor: theme.background,
+                },
+              ]}
               onPress={(event) => {
                 event.stopPropagation();
                 seekBy(10);
-              }}>
+              }}
+            >
               <Text style={[styles.skipText, { color: theme.text }]}>+10</Text>
             </Pressable>
           </View>
