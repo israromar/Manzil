@@ -31,7 +31,11 @@ const PAGE_ESTIMATE = 460;
 const HEADER_ESTIMATE = 72;
 const PROGRESS_DEBOUNCE_MS = 400;
 
-function findSectionIndex(sections: ManzilSection[], verses: ManzilVerse[], verseId: number) {
+function findSectionIndex(
+  sections: ManzilSection[],
+  verses: ManzilVerse[],
+  verseId: number,
+) {
   const verseIndex = Math.max(0, getVerseIndexById(verses, verseId));
   const sectionIdx = sections.findIndex((section, index) => {
     const nextStart = sections[index + 1]?.startIndex ?? verses.length;
@@ -40,7 +44,13 @@ function findSectionIndex(sections: ManzilSection[], verses: ManzilVerse[], vers
   return Math.max(0, sectionIdx);
 }
 
-export function MushafReader({ verses, sections, activeVerseId, initialVerseId, contentBottomInset = 16 }: MushafReaderProps) {
+export function MushafReader({
+  verses,
+  sections,
+  activeVerseId,
+  initialVerseId,
+  contentBottomInset = 16,
+}: MushafReaderProps) {
   const router = useRouter();
   const { settings } = useSettings();
   const { isPlaying } = useAppAudio();
@@ -50,7 +60,9 @@ export function MushafReader({ verses, sections, activeVerseId, initialVerseId, 
   const userScrollingRef = useRef(false);
   const progressTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const hasInitialScrolledRef = useRef(false);
-  const initialSectionIndexRef = useRef(findSectionIndex(sections, verses, initialVerseId));
+  const initialSectionIndexRef = useRef(
+    findSectionIndex(sections, verses, initialVerseId),
+  );
 
   const sectionVerses = useMemo(() => {
     return sections.map((section, index) => {
@@ -65,14 +77,24 @@ export function MushafReader({ verses, sections, activeVerseId, initialVerseId, 
       offset: HEADER_ESTIMATE + PAGE_ESTIMATE * index,
       index,
     }),
-    []
+    [],
   );
 
   useEffect(() => {
-    if (!settings.autoScroll || !isPlaying || activeVerseId == null || userScrollingRef.current) return;
+    if (
+      !settings.autoScroll ||
+      !isPlaying ||
+      activeVerseId == null ||
+      userScrollingRef.current
+    )
+      return;
     const sectionIdx = findSectionIndex(sections, verses, activeVerseId);
     if (sectionIdx >= 0) {
-      listRef.current?.scrollToIndex({ index: sectionIdx, animated: true, viewPosition: 0.15 });
+      listRef.current?.scrollToIndex({
+        index: sectionIdx,
+        animated: true,
+        viewPosition: 0.15,
+      });
     }
   }, [activeVerseId, isPlaying, sections, settings.autoScroll, verses]);
 
@@ -80,7 +102,11 @@ export function MushafReader({ verses, sections, activeVerseId, initialVerseId, 
     if (hasInitialScrolledRef.current) return;
     const index = initialSectionIndexRef.current;
     requestAnimationFrame(() => {
-      listRef.current?.scrollToIndex({ index, animated: false, viewPosition: 0 });
+      listRef.current?.scrollToIndex({
+        index,
+        animated: false,
+        viewPosition: 0,
+      });
       hasInitialScrolledRef.current = true;
     });
   }, []);
@@ -90,12 +116,18 @@ export function MushafReader({ verses, sections, activeVerseId, initialVerseId, 
       if (progressTimerRef.current) clearTimeout(progressTimerRef.current);
       progressTimerRef.current = setTimeout(() => {
         const adjusted = Math.max(0, offset - HEADER_ESTIMATE);
-        const sectionIndex = Math.min(sections.length - 1, Math.max(0, Math.floor(adjusted / PAGE_ESTIMATE)));
+        const sectionIndex = Math.min(
+          sections.length - 1,
+          Math.max(0, Math.floor(adjusted / PAGE_ESTIMATE)),
+        );
         const verse = verses[sections[sectionIndex]?.startIndex ?? 0];
-        setReadingProgress({ lastVerseId: verse?.id ?? null, lastScrollOffset: offset });
+        setReadingProgress({
+          lastVerseId: verse?.id ?? null,
+          lastScrollOffset: offset,
+        });
       }, PROGRESS_DEBOUNCE_MS);
     },
-    [sections, setReadingProgress, verses]
+    [sections, setReadingProgress, verses],
   );
 
   useEffect(() => {
@@ -113,7 +145,7 @@ export function MushafReader({ verses, sections, activeVerseId, initialVerseId, 
       userScrollingRef.current = false;
       persistScrollProgress(event.nativeEvent.contentOffset.y);
     },
-    [persistScrollProgress]
+    [persistScrollProgress],
   );
 
   const renderItem = useCallback(
@@ -127,7 +159,7 @@ export function MushafReader({ verses, sections, activeVerseId, initialVerseId, 
         highlightActive={isPlaying}
       />
     ),
-    [activeVerseId, isPlaying, sectionVerses, sections.length]
+    [activeVerseId, isPlaying, sectionVerses, sections.length],
   );
 
   const listHeader = useMemo(
@@ -135,14 +167,18 @@ export function MushafReader({ verses, sections, activeVerseId, initialVerseId, 
       <View style={styles.header}>
         <View style={styles.headerRow}>
           <View style={styles.headerText}>
-            <Text style={[styles.headerTitle, { color: theme.text }]}>Read Manzil</Text>
-            <Text style={{ color: theme.subtext }}>Mushaf page • {sections.length} sections</Text>
+            <Text style={[styles.headerTitle, { color: theme.text }]}>
+              Read Manzil
+            </Text>
+            <Text style={{ color: theme.subtext }}>
+              Mushaf page • {sections.length} sections
+            </Text>
           </View>
           <ReadingFormatButton onPress={() => router.push('/reading-format')} />
         </View>
       </View>
     ),
-    [router, sections.length, theme.subtext, theme.text]
+    [router, sections.length, theme.subtext, theme.text],
   );
 
   return (
@@ -153,7 +189,10 @@ export function MushafReader({ verses, sections, activeVerseId, initialVerseId, 
       keyExtractor={(item) => String(item.surahNumber)}
       renderItem={renderItem}
       ListHeaderComponent={listHeader}
-      contentContainerStyle={[styles.content, { paddingBottom: contentBottomInset }]}
+      contentContainerStyle={[
+        styles.content,
+        { paddingBottom: contentBottomInset },
+      ]}
       initialScrollIndex={initialSectionIndexRef.current}
       getItemLayout={getItemLayout}
       maxToRenderPerBatch={2}
@@ -163,7 +202,10 @@ export function MushafReader({ verses, sections, activeVerseId, initialVerseId, 
       onMomentumScrollEnd={onScrollEnd}
       onScrollEndDrag={onScrollEnd}
       onScrollToIndexFailed={(info) => {
-        listRef.current?.scrollToOffset({ offset: HEADER_ESTIMATE + info.index * PAGE_ESTIMATE, animated: false });
+        listRef.current?.scrollToOffset({
+          offset: HEADER_ESTIMATE + info.index * PAGE_ESTIMATE,
+          animated: false,
+        });
       }}
     />
   );
@@ -173,7 +215,12 @@ const styles = StyleSheet.create({
   list: { flex: 1 },
   content: { paddingTop: 8 },
   header: { marginHorizontal: 16, marginBottom: 8 },
-  headerRow: { flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between', gap: 12 },
+  headerRow: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    justifyContent: 'space-between',
+    gap: 12,
+  },
   headerText: { flex: 1 },
   headerTitle: { fontSize: 24, fontWeight: '700' },
 });

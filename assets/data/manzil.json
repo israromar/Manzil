@@ -1,6 +1,6 @@
 {
   "source": "Source: api.alquran.cloud editions quran-uthmani (Arabic), en.sahih (English), ur.jalandhry (Urdu).",
-  "totalDuration": 1319,
+  "totalDuration": 1318,
   "sections": [
     {
       "surahNumber": 1,
@@ -12,79 +12,79 @@
       "surahNumber": 2,
       "surahName": "Al-Baqarah",
       "surahNameArabic": "البقرة",
-      "startIndex": 7
+      "startIndex": 6
     },
     {
       "surahNumber": 3,
       "surahName": "Aal-e-Imran",
       "surahNameArabic": "آل عمران",
-      "startIndex": 19
+      "startIndex": 18
     },
     {
       "surahNumber": 7,
       "surahName": "Al-A'raf",
       "surahNameArabic": "الأعراف",
-      "startIndex": 22
+      "startIndex": 21
     },
     {
       "surahNumber": 17,
       "surahName": "Al-Isra",
       "surahNameArabic": "الإسراء",
-      "startIndex": 25
+      "startIndex": 24
     },
     {
       "surahNumber": 23,
       "surahName": "Al-Mu'minun",
       "surahNameArabic": "المؤمنون",
-      "startIndex": 27
+      "startIndex": 26
     },
     {
       "surahNumber": 37,
       "surahName": "As-Saffat",
       "surahNameArabic": "الصافات",
-      "startIndex": 31
+      "startIndex": 30
     },
     {
       "surahNumber": 55,
       "surahName": "Ar-Rahman",
       "surahNameArabic": "الرحمن",
-      "startIndex": 42
+      "startIndex": 41
     },
     {
       "surahNumber": 59,
       "surahName": "Al-Hashr",
       "surahNameArabic": "الحشر",
-      "startIndex": 50
+      "startIndex": 49
     },
     {
       "surahNumber": 72,
       "surahName": "Al-Jinn",
       "surahNameArabic": "الجن",
-      "startIndex": 54
+      "startIndex": 53
     },
     {
       "surahNumber": 109,
       "surahName": "Al-Kafirun",
       "surahNameArabic": "الكافرون",
-      "startIndex": 58
+      "startIndex": 57
     },
     {
       "surahNumber": 112,
       "surahName": "Al-Ikhlas",
       "surahNameArabic": "الإخلاص",
-      "startIndex": 64
+      "startIndex": 63
     },
     {
       "surahNumber": 113,
       "surahName": "Al-Falaq",
       "surahNameArabic": "الفلق",
-      "startIndex": 68
+      "startIndex": 67
     },
     {
       "surahNumber": 114,
       "surahName": "An-Nas",
       "surahNameArabic": "الناس",
-      "startIndex": 73
+      "startIndex": 72
     }
   ],
   "verses": [
@@ -93,10 +93,10 @@
       "surahNumber": 1,
       "surahName": "Al-Fatiha",
       "surahNameArabic": "الفاتحة",
-      "ayah": 1,
-      "arabic": "﻿بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
-      "urdu": "شروع الله کا نام لے کر جو بڑا مہربان نہایت رحم والا ہے",
-      "english": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
+      "ayah": 2,
+      "arabic": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ",
+      "urdu": "سب طرح کی تعریف خدا ہی کو (سزاوار) ہے جو تمام مخلوقات کا پروردگار ہے",
+      "english": "[All] praise is [due] to Allah, Lord of the worlds -",
       "startTime": 0,
       "endTime": 7
     },
@@ -105,27 +105,15 @@
       "surahNumber": 1,
       "surahName": "Al-Fatiha",
       "surahNameArabic": "الفاتحة",
-      "ayah": 2,
-      "arabic": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ",
-      "urdu": "سب طرح کی تعریف خدا ہی کو (سزاوار) ہے جو تمام مخلوقات کا پروردگار ہے",
-      "english": "[All] praise is [due] to Allah, Lord of the worlds -",
-      "startTime": 7,
-      "endTime": 14
-    },
-    {
-      "id": 3,
-      "surahNumber": 1,
-      "surahName": "Al-Fatiha",
-      "surahNameArabic": "الفاتحة",
       "ayah": 3,
       "arabic": "ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
       "urdu": "بڑا مہربان نہایت رحم والا",
       "english": "The Entirely Merciful, the Especially Merciful,",
-      "startTime": 14,
-      "endTime": 18
+      "startTime": 7,
+      "endTime": 11
     },
     {
-      "id": 4,
+      "id": 3,
       "surahNumber": 1,
       "surahName": "Al-Fatiha",
       "surahNameArabic": "الفاتحة",
@@ -133,11 +121,11 @@
       "arabic": "مَٰلِكِ يَوْمِ ٱلدِّينِ",
       "urdu": "انصاف کے دن کا حاکم",
       "english": "Sovereign of the Day of Recompense.",
-      "startTime": 18,
-      "endTime": 22
+      "startTime": 11,
+      "endTime": 15
     },
     {
-      "id": 5,
+      "id": 4,
       "surahNumber": 1,
       "surahName": "Al-Fatiha",
       "surahNameArabic": "الفاتحة",
@@ -145,11 +133,11 @@
       "arabic": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
       "urdu": "(اے پروردگار) ہم تیری ہی عبادت کرتے ہیں اور تجھ ہی سے مدد مانگتے ہیں",
       "english": "It is You we worship and You we ask for help.",
-      "startTime": 22,
-      "endTime": 29
+      "startTime": 15,
+      "endTime": 23
     },
     {
-      "id": 6,
+      "id": 5,
       "surahNumber": 1,
       "surahName": "Al-Fatiha",
       "surahNameArabic": "الفاتحة",
@@ -157,11 +145,11 @@
       "arabic": "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ",
       "urdu": "ہم کو سیدھے رستے چلا",
       "english": "Guide us to the straight path -",
-      "startTime": 29,
-      "endTime": 35
+      "startTime": 23,
+      "endTime": 29
     },
     {
-      "id": 7,
+      "id": 6,
       "surahNumber": 1,
       "surahName": "Al-Fatiha",
       "surahNameArabic": "الفاتحة",
@@ -169,23 +157,23 @@
       "arabic": "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
       "urdu": "ان لوگوں کے رستے جن پر تو اپنا فضل وکرم کرتا رہا نہ ان کے جن پر غصے ہوتا رہا اور نہ گمراہوں کے",
       "english": "The path of those upon whom You have bestowed favor, not of those who have evoked [Your] anger or of those who are astray.",
-      "startTime": 35,
-      "endTime": 51
+      "startTime": 29,
+      "endTime": 46
     },
     {
-      "id": 8,
+      "id": 7,
       "surahNumber": 2,
       "surahName": "Al-Baqarah",
       "surahNameArabic": "البقرة",
       "ayah": 1,
-      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ الٓمٓ",
+      "arabic": "الٓمٓ",
       "urdu": "الم",
       "english": "Alif, Lam, Meem.",
-      "startTime": 51,
-      "endTime": 59
+      "startTime": 46,
+      "endTime": 48
     },
     {
-      "id": 9,
+      "id": 8,
       "surahNumber": 2,
       "surahName": "Al-Baqarah",
       "surahNameArabic": "البقرة",
@@ -193,11 +181,11 @@
       "arabic": "ذَٰلِكَ ٱلْكِتَٰبُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًۭى لِّلْمُتَّقِينَ",
       "urdu": "یہ کتاب (قرآن مجید) اس میں کچھ شک نہیں (کہ کلامِ خدا ہے۔ خدا سے) ڈرنے والوں کی رہنما ہے",
       "english": "This is the Book about which there is no doubt, a guidance for those conscious of Allah -",
-      "startTime": 59,
-      "endTime": 70
+      "startTime": 48,
+      "endTime": 60
     },
     {
-      "id": 10,
+      "id": 9,
       "surahNumber": 2,
       "surahName": "Al-Baqarah",
       "surahNameArabic": "البقرة",
@@ -205,11 +193,11 @@
       "arabic": "ٱلَّذِينَ يُؤْمِنُونَ بِٱلْغَيْبِ وَيُقِيمُونَ ٱلصَّلَوٰةَ وَمِمَّا رَزَقْنَٰهُمْ يُنفِقُونَ",
       "urdu": "جو غیب پر ایمان لاتے اور آداب کے ساتھ نماز پڑھتے اور جو کچھ ہم نے ان کو عطا فرمایا ہے اس میں سے خرچ کرتے ہیں",
       "english": "Who believe in the unseen, establish prayer, and spend out of what We have provided for them,",
-      "startTime": 70,
-      "endTime": 87
+      "startTime": 60,
+      "endTime": 77
     },
     {
-      "id": 11,
+      "id": 10,
       "surahNumber": 2,
       "surahName": "Al-Baqarah",
       "surahNameArabic": "البقرة",
@@ -217,11 +205,11 @@
       "arabic": "وَٱلَّذِينَ يُؤْمِنُونَ بِمَآ أُنزِلَ إِلَيْكَ وَمَآ أُنزِلَ مِن قَبْلِكَ وَبِٱلْءَاخِرَةِ هُمْ يُوقِنُونَ",
       "urdu": "اور جو کتاب (اے محمدﷺ) تم پر نازل ہوئی اور جو کتابیں تم سے پہلے (پیغمبروں پر) نازل ہوئیں سب پر ایمان لاتے اور آخرت کا یقین رکھتے ہیں",
       "english": "And who believe in what has been revealed to you, [O Muhammad], and what was revealed before you, and of the Hereafter they are certain [in faith].",
-      "startTime": 87,
-      "endTime": 107
+      "startTime": 77,
+      "endTime": 98
     },
     {
-      "id": 12,
+      "id": 11,
       "surahNumber": 2,
       "surahName": "Al-Baqarah",
       "surahNameArabic": "البقرة",
@@ -229,11 +217,11 @@
       "arabic": "أُو۟لَٰٓئِكَ عَلَىٰ هُدًۭى مِّن رَّبِّهِمْ ۖ وَأُو۟لَٰٓئِكَ هُمُ ٱلْمُفْلِحُونَ",
       "urdu": "یہی لوگ اپنے پروردگار (کی طرف) سے ہدایت پر ہیں اور یہی نجات پانے والے ہیں",
       "english": "Those are upon [right] guidance from their Lord, and it is those who are the successful.",
-      "startTime": 107,
-      "endTime": 121
+      "startTime": 98,
+      "endTime": 113
     },
     {
-      "id": 13,
+      "id": 12,
       "surahNumber": 2,
       "surahName": "Al-Baqarah",
       "surahNameArabic": "البقرة",
@@ -241,11 +229,11 @@
       "arabic": "وَإِلَٰهُكُمْ إِلَٰهٌۭ وَٰحِدٌۭ ۖ لَّآ إِلَٰهَ إِلَّا هُوَ ٱلرَّحْمَٰنُ ٱلرَّحِيمُ",
       "urdu": "اور (لوگو) تمہارا معبود خدائے واحد ہے اس بڑے مہربان (اور) رحم کرنے کے سوا کوئی عبادت کے لائق نہیں",
       "english": "And your god is one God. There is no deity [worthy of worship] except Him, the Entirely Merciful, the Especially Merciful.",
-      "startTime": 121,
-      "endTime": 136
+      "startTime": 113,
+      "endTime": 129
     },
     {
-      "id": 14,
+      "id": 13,
       "surahNumber": 2,
       "surahName": "Al-Baqarah",
       "surahNameArabic": "البقرة",
@@ -253,11 +241,11 @@
       "arabic": "ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلْحَىُّ ٱلْقَيُّومُ ۚ لَا تَأْخُذُهُۥ سِنَةٌۭ وَلَا نَوْمٌۭ ۚ لَّهُۥ مَا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۗ مَن ذَا ٱلَّذِى يَشْفَعُ عِندَهُۥٓ إِلَّا بِإِذْنِهِۦ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَىْءٍۢ مِّنْ عِلْمِهِۦٓ إِلَّا بِمَا شَآءَ ۚ وَسِعَ كُرْسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ ۖ وَلَا يَـُٔودُهُۥ حِفْظُهُمَا ۚ وَهُوَ ٱلْعَلِىُّ ٱلْعَظِيمُ",
       "urdu": "خدا (وہ معبود برحق ہے کہ) اس کے سوا کوئی عبادت کے لائق نہیں زندہ ہمیشہ رہنے والا اسے نہ اونگھ آتی ہے نہ نیند جو کچھ آسمانوں میں اور جو کچھ زمین میں ہیں سب اسی کا ہے کون ہے جو اس کی اجازت کے بغیر اس سے (کسی کی) سفارش کر سکے جو کچھ لوگوں کے روبرو ہو رہا ہے اور جو کچھ ان کے پیچھے ہوچکا ہے اسے سب معلوم ہے اور وہ اس کی معلومات میں سے کسی چیز پر دسترس حاصل نہیں کر سکتے ہاں جس قدر وہ چاہتا ہے (اسی قدر معلوم کرا دیتا ہے) اس کی بادشاہی (اور علم) آسمان اور زمین سب پر حاوی ہے اور اسے ان کی حفاظت کچھ بھی دشوار نہیں وہ بڑا عالی رتبہ اور جلیل القدر ہے",
       "english": "Allah - there is no deity except Him, the Ever-Living, the Sustainer of [all] existence. Neither drowsiness overtakes Him nor sleep. To Him belongs whatever is in the heavens and whatever is on the earth. Who is it that can intercede with Him except by His permission? He knows what is [presently] before them and what will be after them, and they encompass not a thing of His knowledge except for what He wills. His Kursi extends over the heavens and the earth, and their preservation tires Him not. And He is the Most High, the Most Great.",
-      "startTime": 136,
-      "endTime": 214
+      "startTime": 129,
+      "endTime": 210
     },
     {
-      "id": 15,
+      "id": 14,
       "surahNumber": 2,
       "surahName": "Al-Baqarah",
       "surahNameArabic": "البقرة",
@@ -265,11 +253,11 @@
       "arabic": "لَآ إِكْرَاهَ فِى ٱلدِّينِ ۖ قَد تَّبَيَّنَ ٱلرُّشْدُ مِنَ ٱلْغَىِّ ۚ فَمَن يَكْفُرْ بِٱلطَّٰغُوتِ وَيُؤْمِنۢ بِٱللَّهِ فَقَدِ ٱسْتَمْسَكَ بِٱلْعُرْوَةِ ٱلْوُثْقَىٰ لَا ٱنفِصَامَ لَهَا ۗ وَٱللَّهُ سَمِيعٌ عَلِيمٌ",
       "urdu": "دین (اسلام) میں زبردستی نہیں ہے ہدایت (صاف طور پر ظاہر اور) گمراہی سے الگ ہو چکی ہے تو جو شخص بتوں سے اعتقاد نہ رکھے اور خدا پر ایمان لائے اس نے ایسی مضبوط رسی ہاتھ میں پکڑ لی ہے جو کبھی ٹوٹنے والی نہیں اور خدا (سب کچھ) سنتا اور (سب کچھ) جانتا ہے",
       "english": "There shall be no compulsion in [acceptance of] the religion. The right course has become clear from the wrong. So whoever disbelieves in Taghut and believes in Allah has grasped the most trustworthy handhold with no break in it. And Allah is Hearing and Knowing.",
-      "startTime": 214,
-      "endTime": 253
+      "startTime": 210,
+      "endTime": 250
     },
     {
-      "id": 16,
+      "id": 15,
       "surahNumber": 2,
       "surahName": "Al-Baqarah",
       "surahNameArabic": "البقرة",
@@ -277,11 +265,11 @@
       "arabic": "ٱللَّهُ وَلِىُّ ٱلَّذِينَ ءَامَنُوا۟ يُخْرِجُهُم مِّنَ ٱلظُّلُمَٰتِ إِلَى ٱلنُّورِ ۖ وَٱلَّذِينَ كَفَرُوٓا۟ أَوْلِيَآؤُهُمُ ٱلطَّٰغُوتُ يُخْرِجُونَهُم مِّنَ ٱلنُّورِ إِلَى ٱلظُّلُمَٰتِ ۗ أُو۟لَٰٓئِكَ أَصْحَٰبُ ٱلنَّارِ ۖ هُمْ فِيهَا خَٰلِدُونَ",
       "urdu": "جو لوگ ایمان لائے ہیں ان کا دوست خدا ہے کہ اُن کو اندھیرے سے نکال کر روشنی میں لے جاتا ہے اور جو کافر ہیں ان کے دوست شیطان ہیں کہ ان کو روشنی سے نکال کر اندھیرے میں لے جاتے ہیں یہی لوگ اہل دوزخ ہیں کہ اس میں ہمیشہ رہیں گے",
       "english": "Allah is the ally of those who believe. He brings them out from darknesses into the light. And those who disbelieve - their allies are Taghut. They take them out of the light into darknesses. Those are the companions of the Fire; they will abide eternally therein.",
-      "startTime": 253,
-      "endTime": 297
+      "startTime": 250,
+      "endTime": 296
     },
     {
-      "id": 17,
+      "id": 16,
       "surahNumber": 2,
       "surahName": "Al-Baqarah",
       "surahNameArabic": "البقرة",
@@ -289,11 +277,11 @@
       "arabic": "لِّلَّهِ مَا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۗ وَإِن تُبْدُوا۟ مَا فِىٓ أَنفُسِكُمْ أَوْ تُخْفُوهُ يُحَاسِبْكُم بِهِ ٱللَّهُ ۖ فَيَغْفِرُ لِمَن يَشَآءُ وَيُعَذِّبُ مَن يَشَآءُ ۗ وَٱللَّهُ عَلَىٰ كُلِّ شَىْءٍۢ قَدِيرٌ",
       "urdu": "جو کچھ آسمانوں میں اور جو کچھ زمین میں ہے سب خدا ہی کا ہے۔ تم اپنے دلوں کی بات کو ظاہر کرو گے تو یا چھپاؤ گے تو خدا تم سے اس کا حساب لے گا پھر وہ جسے چاہے مغفرت کرے اور جسے چاہے عذاب دے۔ اور خدا ہر چیز پر قادر ہے",
       "english": "To Allah belongs whatever is in the heavens and whatever is in the earth. Whether you show what is within yourselves or conceal it, Allah will bring you to account for it. Then He will forgive whom He wills and punish whom He wills, and Allah is over all things competent.",
-      "startTime": 297,
-      "endTime": 338
+      "startTime": 296,
+      "endTime": 339
     },
     {
-      "id": 18,
+      "id": 17,
       "surahNumber": 2,
       "surahName": "Al-Baqarah",
       "surahNameArabic": "البقرة",
@@ -301,11 +289,11 @@
       "arabic": "ءَامَنَ ٱلرَّسُولُ بِمَآ أُنزِلَ إِلَيْهِ مِن رَّبِّهِۦ وَٱلْمُؤْمِنُونَ ۚ كُلٌّ ءَامَنَ بِٱللَّهِ وَمَلَٰٓئِكَتِهِۦ وَكُتُبِهِۦ وَرُسُلِهِۦ لَا نُفَرِّقُ بَيْنَ أَحَدٍۢ مِّن رُّسُلِهِۦ ۚ وَقَالُوا۟ سَمِعْنَا وَأَطَعْنَا ۖ غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ ٱلْمَصِيرُ",
       "urdu": "رسول (خدا) اس کتاب پر جو ان کے پروردگار کی طرف سے ان پر نازل ہوئی ایمان رکھتے ہیں اور مومن بھی۔ سب خدا پر اور اس کے فرشتوں پر اور اس کی کتابوں پر اور اس کے پیغمبروں پر ایمان رکھتے ہیں (اورکہتے ہیں کہ) ہم اس کے پیغمبروں سے کسی میں کچھ فرق نہیں کرتے اور وہ (خدا سے) عرض کرتے ہیں کہ ہم نے (تیرا حکم) سنا اور قبول کیا۔ اے پروردگار ہم تیری بخشش مانگتے ہیں اور تیری ہی طرف لوٹ کر جانا ہے",
       "english": "The Messenger has believed in what was revealed to him from his Lord, and [so have] the believers. All of them have believed in Allah and His angels and His books and His messengers, [saying], \"We make no distinction between any of His messengers.\" And they say, \"We hear and we obey. [We seek] Your forgiveness, our Lord, and to You is the [final] destination.\"",
-      "startTime": 338,
-      "endTime": 386
+      "startTime": 339,
+      "endTime": 390
     },
     {
-      "id": 19,
+      "id": 18,
       "surahNumber": 2,
       "surahName": "Al-Baqarah",
       "surahNameArabic": "البقرة",
@@ -313,11 +301,11 @@
       "arabic": "لَا يُكَلِّفُ ٱللَّهُ نَفْسًا إِلَّا وُسْعَهَا ۚ لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا ٱكْتَسَبَتْ ۗ رَبَّنَا لَا تُؤَاخِذْنَآ إِن نَّسِينَآ أَوْ أَخْطَأْنَا ۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَآ إِصْرًۭا كَمَا حَمَلْتَهُۥ عَلَى ٱلَّذِينَ مِن قَبْلِنَا ۚ رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِۦ ۖ وَٱعْفُ عَنَّا وَٱغْفِرْ لَنَا وَٱرْحَمْنَآ ۚ أَنتَ مَوْلَىٰنَا فَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَٰفِرِينَ",
       "urdu": "خدا کسی شخص کو اس کی طاقت سے زیادہ تکلیف نہیں دیتا۔ اچھے کام کرے گا تو اس کو ان کا فائدہ ملے گا برے کرے گا تو اسے ان کا نقصان پہنچے گا۔ اے پروردگار اگر ہم سے بھول یا چوک ہوگئی ہو تو ہم سے مؤاخذہ نہ کیجیو۔ اے پروردگار ہم پر ایسا بوجھ نہ ڈالیو جیسا تو نے ہم سے پہلے لوگوں پر ڈالا تھا۔ اے پروردگار جتنا بوجھ اٹھانے کی ہم میں طاقت نہیں اتنا ہمارے سر پر نہ رکھیو۔ اور (اے پروردگار) ہمارے گناہوں سے درگزر کر اور ہمیں بخش دے۔ اور ہم پر رحم فرما۔ تو ہی ہمارا مالک ہے اور ہم کو کافروں پر غالب فرما",
       "english": "Allah does not charge a soul except [with that within] its capacity. It will have [the consequence of] what [good] it has gained, and it will bear [the consequence of] what [evil] it has earned. \"Our Lord, do not impose blame upon us if we have forgotten or erred. Our Lord, and lay not upon us a burden like that which You laid upon those before us. Our Lord, and burden us not with that which we have no ability to bear. And pardon us; and forgive us; and have mercy upon us. You are our protector, so give us victory over the disbelieving people.\"",
-      "startTime": 386,
-      "endTime": 462
+      "startTime": 390,
+      "endTime": 469
     },
     {
-      "id": 20,
+      "id": 19,
       "surahNumber": 3,
       "surahName": "Aal-e-Imran",
       "surahNameArabic": "آل عمران",
@@ -325,11 +313,11 @@
       "arabic": "شَهِدَ ٱللَّهُ أَنَّهُۥ لَآ إِلَٰهَ إِلَّا هُوَ وَٱلْمَلَٰٓئِكَةُ وَأُو۟لُوا۟ ٱلْعِلْمِ قَآئِمًۢا بِٱلْقِسْطِ ۚ لَآ إِلَٰهَ إِلَّا هُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
       "urdu": "خدا تو اس بات کی گواہی دیتا ہے کہ اس کے سوا کوئی معبود نہیں اور فرشتے اور علم والے لوگ جو انصاف پر قائم ہیں وہ بھی (گواہی دیتے ہیں کہ) اس غالب حکمت والے کے سوا کوئی عبادت کے لائق نہیں",
       "english": "Allah witnesses that there is no deity except Him, and [so do] the angels and those of knowledge - [that He is] maintaining [creation] in justice. There is no deity except Him, the Exalted in Might, the Wise.",
-      "startTime": 462,
-      "endTime": 491
+      "startTime": 469,
+      "endTime": 499
     },
     {
-      "id": 21,
+      "id": 20,
       "surahNumber": 3,
       "surahName": "Aal-e-Imran",
       "surahNameArabic": "آل عمران",
@@ -337,11 +325,11 @@
       "arabic": "قُلِ ٱللَّهُمَّ مَٰلِكَ ٱلْمُلْكِ تُؤْتِى ٱلْمُلْكَ مَن تَشَآءُ وَتَنزِعُ ٱلْمُلْكَ مِمَّن تَشَآءُ وَتُعِزُّ مَن تَشَآءُ وَتُذِلُّ مَن تَشَآءُ ۖ بِيَدِكَ ٱلْخَيْرُ ۖ إِنَّكَ عَلَىٰ كُلِّ شَىْءٍۢ قَدِيرٌۭ",
       "urdu": "کہو کہ اے خدا (اے) بادشاہی کے مالک تو جس کو چاہے بادشاہی بخشے اور جس سے چاہے بادشاہی چھین لے اور جس کو چاہے عزت دے اور جسے چاہے ذلیل کرے ہر طرح کی بھلائی تیرے ہی ہاتھ ہے اور بے شک تو ہر چیز پر قادر ہے",
       "english": "Say, \"O Allah, Owner of Sovereignty, You give sovereignty to whom You will and You take sovereignty away from whom You will. You honor whom You will and You humble whom You will. In Your hand is [all] good. Indeed, You are over all things competent.",
-      "startTime": 491,
-      "endTime": 529
+      "startTime": 499,
+      "endTime": 538
     },
     {
-      "id": 22,
+      "id": 21,
       "surahNumber": 3,
       "surahName": "Aal-e-Imran",
       "surahNameArabic": "آل عمران",
@@ -349,11 +337,11 @@
       "arabic": "تُولِجُ ٱلَّيْلَ فِى ٱلنَّهَارِ وَتُولِجُ ٱلنَّهَارَ فِى ٱلَّيْلِ ۖ وَتُخْرِجُ ٱلْحَىَّ مِنَ ٱلْمَيِّتِ وَتُخْرِجُ ٱلْمَيِّتَ مِنَ ٱلْحَىِّ ۖ وَتَرْزُقُ مَن تَشَآءُ بِغَيْرِ حِسَابٍۢ",
       "urdu": "تو ہی رات کو دن میں داخل کرتا اور تو ہی دن کو رات میں داخل کرتا ہے تو ہی بے جان سے جاندار پیدا کرتا ہے اور تو ہی جاندار سے بے جان پیدا کرتا ہے اور توہی جس کو چاہتا ہے بے شمار رزق بخشتا ہے",
       "english": "You cause the night to enter the day, and You cause the day to enter the night; and You bring the living out of the dead, and You bring the dead out of the living. And You give provision to whom You will without account.\"",
-      "startTime": 529,
-      "endTime": 562
+      "startTime": 538,
+      "endTime": 573
     },
     {
-      "id": 23,
+      "id": 22,
       "surahNumber": 7,
       "surahName": "Al-A'raf",
       "surahNameArabic": "الأعراف",
@@ -361,11 +349,11 @@
       "arabic": "إِنَّ رَبَّكُمُ ٱللَّهُ ٱلَّذِى خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ فِى سِتَّةِ أَيَّامٍۢ ثُمَّ ٱسْتَوَىٰ عَلَى ٱلْعَرْشِ يُغْشِى ٱلَّيْلَ ٱلنَّهَارَ يَطْلُبُهُۥ حَثِيثًۭا وَٱلشَّمْسَ وَٱلْقَمَرَ وَٱلنُّجُومَ مُسَخَّرَٰتٍۭ بِأَمْرِهِۦٓ ۗ أَلَا لَهُ ٱلْخَلْقُ وَٱلْأَمْرُ ۗ تَبَارَكَ ٱللَّهُ رَبُّ ٱلْعَٰلَمِينَ",
       "urdu": "کچھ شک نہیں کہ تمہارا پروردگار خدا ہی ہے جس نے آسمانوں اور زمین کو چھ دن میں پیدا کیا پھر عرش پر جا ٹھہرا۔ وہی رات کو دن کا لباس پہناتا ہے کہ وہ اس کے پیچھے دوڑتا چلا آتا ہے۔ اور اسی نے سورج اور چاند ستاروں کو پیدا کیا سب اس کے حکم کے مطابق کام میں لگے ہوئے ہیں۔ دیکھو سب مخلوق بھی اسی کی ہے اور حکم بھی (اسی کا ہے) ۔ یہ خدا رب العالمین بڑی برکت والا ہے",
       "english": "Indeed, your Lord is Allah, who created the heavens and earth in six days and then established Himself above the Throne. He covers the night with the day, [another night] chasing it rapidly; and [He created] the sun, the moon, and the stars, subjected by His command. Unquestionably, His is the creation and the command; blessed is Allah, Lord of the worlds.",
-      "startTime": 562,
-      "endTime": 618
+      "startTime": 573,
+      "endTime": 631
     },
     {
-      "id": 24,
+      "id": 23,
       "surahNumber": 7,
       "surahName": "Al-A'raf",
       "surahNameArabic": "الأعراف",
@@ -373,11 +361,11 @@
       "arabic": "ٱدْعُوا۟ رَبَّكُمْ تَضَرُّعًۭا وَخُفْيَةً ۚ إِنَّهُۥ لَا يُحِبُّ ٱلْمُعْتَدِينَ",
       "urdu": "(لوگو) اپنے پروردگار سے عاجزی سے اور چپکے چپکے دعائیں مانگا کرو۔ وہ حد سے بڑھنے والوں کو دوست نہیں رکھتا",
       "english": "Call upon your Lord in humility and privately; indeed, He does not like transgressors.",
-      "startTime": 618,
-      "endTime": 632
+      "startTime": 631,
+      "endTime": 646
     },
     {
-      "id": 25,
+      "id": 24,
       "surahNumber": 7,
       "surahName": "Al-A'raf",
       "surahNameArabic": "الأعراف",
@@ -385,11 +373,11 @@
       "arabic": "وَلَا تُفْسِدُوا۟ فِى ٱلْأَرْضِ بَعْدَ إِصْلَٰحِهَا وَٱدْعُوهُ خَوْفًۭا وَطَمَعًا ۚ إِنَّ رَحْمَتَ ٱللَّهِ قَرِيبٌۭ مِّنَ ٱلْمُحْسِنِينَ",
       "urdu": "اور ملک میں اصلاح کے بعد خرابی نہ کرنا اور خدا سے خوف کرتے ہوئے اور امید رکھ کر دعائیں مانگتے رہنا۔ کچھ شک نہیں کہ خدا کی رحمت نیکی کرنے والوں سے قریب ہے",
       "english": "And cause not corruption upon the earth after its reformation. And invoke Him in fear and aspiration. Indeed, the mercy of Allah is near to the doers of good.",
-      "startTime": 632,
-      "endTime": 657
+      "startTime": 646,
+      "endTime": 672
     },
     {
-      "id": 26,
+      "id": 25,
       "surahNumber": 17,
       "surahName": "Al-Isra",
       "surahNameArabic": "الإسراء",
@@ -397,11 +385,11 @@
       "arabic": "قُلِ ٱدْعُوا۟ ٱللَّهَ أَوِ ٱدْعُوا۟ ٱلرَّحْمَٰنَ ۖ أَيًّۭا مَّا تَدْعُوا۟ فَلَهُ ٱلْأَسْمَآءُ ٱلْحُسْنَىٰ ۚ وَلَا تَجْهَرْ بِصَلَاتِكَ وَلَا تُخَافِتْ بِهَا وَٱبْتَغِ بَيْنَ ذَٰلِكَ سَبِيلًۭا",
       "urdu": "کہہ دو کہ تم (خدا کو) الله (کے نام سے) پکارو یا رحمٰن (کے نام سے) جس نام سے پکارو اس کے سب اچھے نام ہیں۔ اور نماز نہ بلند آواز سے پڑھو اور نہ آہستہ بلکہ اس کے بیچ کا طریقہ اختیار کرو",
       "english": "Say, \"Call upon Allah or call upon the Most Merciful. Whichever [name] you call - to Him belong the best names.\" And do not recite [too] loudly in your prayer or [too] quietly but seek between that an [intermediate] way.",
-      "startTime": 657,
-      "endTime": 692
+      "startTime": 672,
+      "endTime": 709
     },
     {
-      "id": 27,
+      "id": 26,
       "surahNumber": 17,
       "surahName": "Al-Isra",
       "surahNameArabic": "الإسراء",
@@ -409,11 +397,11 @@
       "arabic": "وَقُلِ ٱلْحَمْدُ لِلَّهِ ٱلَّذِى لَمْ يَتَّخِذْ وَلَدًۭا وَلَمْ يَكُن لَّهُۥ شَرِيكٌۭ فِى ٱلْمُلْكِ وَلَمْ يَكُن لَّهُۥ وَلِىٌّۭ مِّنَ ٱلذُّلِّ ۖ وَكَبِّرْهُ تَكْبِيرًۢا",
       "urdu": "اور کہو کہ سب تعریف خدا ہی کو ہے جس نے نہ تو کسی کو بیٹا بنایا ہے اور نہ اس کی بادشاہی میں کوئی شریک ہے اور نہ اس وجہ سے کہ وہ عاجز وناتواں ہے کوئی اس کا مددگار ہے اور اس کو بڑا جان کر اس کی بڑائی کرتے رہو",
       "english": "And say, \"Praise to Allah, who has not taken a son and has had no partner in [His] dominion and has no [need of a] protector out of weakness; and glorify Him with [great] glorification.\"",
-      "startTime": 692,
-      "endTime": 723
+      "startTime": 709,
+      "endTime": 741
     },
     {
-      "id": 28,
+      "id": 27,
       "surahNumber": 23,
       "surahName": "Al-Mu'minun",
       "surahNameArabic": "المؤمنون",
@@ -421,11 +409,11 @@
       "arabic": "أَفَحَسِبْتُمْ أَنَّمَا خَلَقْنَٰكُمْ عَبَثًۭا وَأَنَّكُمْ إِلَيْنَا لَا تُرْجَعُونَ",
       "urdu": "کیا تم یہ خیال کرتے ہو کہ ہم نے تم کو بےفائدہ پیدا کیا ہے اور یہ تم ہماری طرف لوٹ کر نہیں آؤ گے؟",
       "english": "Then did you think that We created you uselessly and that to Us you would not be returned?\"",
-      "startTime": 723,
-      "endTime": 738
+      "startTime": 741,
+      "endTime": 757
     },
     {
-      "id": 29,
+      "id": 28,
       "surahNumber": 23,
       "surahName": "Al-Mu'minun",
       "surahNameArabic": "المؤمنون",
@@ -433,11 +421,11 @@
       "arabic": "فَتَعَٰلَى ٱللَّهُ ٱلْمَلِكُ ٱلْحَقُّ ۖ لَآ إِلَٰهَ إِلَّا هُوَ رَبُّ ٱلْعَرْشِ ٱلْكَرِيمِ",
       "urdu": "تو خدا جو سچا بادشاہ ہے (اس کی شان) اس سے اونچی ہے، اس کے سوا کوئی معبود نہیں، وہی عرش بزرگ کا مالک ہے",
       "english": "So exalted is Allah, the Sovereign, the Truth; there is no deity except Him, Lord of the Noble Throne.",
-      "startTime": 738,
-      "endTime": 755
+      "startTime": 757,
+      "endTime": 774
     },
     {
-      "id": 30,
+      "id": 29,
       "surahNumber": 23,
       "surahName": "Al-Mu'minun",
       "surahNameArabic": "المؤمنون",
@@ -445,11 +433,11 @@
       "arabic": "وَمَن يَدْعُ مَعَ ٱللَّهِ إِلَٰهًا ءَاخَرَ لَا بُرْهَٰنَ لَهُۥ بِهِۦ فَإِنَّمَا حِسَابُهُۥ عِندَ رَبِّهِۦٓ ۚ إِنَّهُۥ لَا يُفْلِحُ ٱلْكَٰفِرُونَ",
       "urdu": "اور جو شخص خدا کے ساتھ اور معبود کو پکارتا ہے جس کی اس کے پاس کچھ بھی سند نہیں تو اس کا حساب خدا ہی کے ہاں ہوگا۔ کچھ شک نہیں کہ کافر رستگاری نہیں پائیں گے",
       "english": "And whoever invokes besides Allah another deity for which he has no proof - then his account is only with his Lord. Indeed, the disbelievers will not succeed.",
-      "startTime": 755,
-      "endTime": 781
+      "startTime": 774,
+      "endTime": 801
     },
     {
-      "id": 31,
+      "id": 30,
       "surahNumber": 23,
       "surahName": "Al-Mu'minun",
       "surahNameArabic": "المؤمنون",
@@ -457,23 +445,23 @@
       "arabic": "وَقُل رَّبِّ ٱغْفِرْ وَٱرْحَمْ وَأَنتَ خَيْرُ ٱلرَّٰحِمِينَ",
       "urdu": "اور خدا سے دعا کرو کہ میرے پروردگار مجھے بخش دے اور (مجھ پر) رحم کر اور تو سب سے بہتر رحم کرنے والا ہے",
       "english": "And, [O Muhammad], say, \"My Lord, forgive and have mercy, and You are the best of the merciful.\"",
-      "startTime": 781,
-      "endTime": 792
+      "startTime": 801,
+      "endTime": 812
     },
     {
-      "id": 32,
+      "id": 31,
       "surahNumber": 37,
       "surahName": "As-Saffat",
       "surahNameArabic": "الصافات",
       "ayah": 1,
-      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلصَّٰٓفَّٰتِ صَفًّۭا",
+      "arabic": "وَٱلصَّٰٓفَّٰتِ صَفًّۭا",
       "urdu": "قسم ہے صف باندھنے والوں کی پرا جما کر",
       "english": "By those [angels] lined up in rows",
-      "startTime": 792,
-      "endTime": 803
+      "startTime": 812,
+      "endTime": 816
     },
     {
-      "id": 33,
+      "id": 32,
       "surahNumber": 37,
       "surahName": "As-Saffat",
       "surahNameArabic": "الصافات",
@@ -481,11 +469,11 @@
       "arabic": "فَٱلزَّٰجِرَٰتِ زَجْرًۭا",
       "urdu": "پھر ڈانٹنے والوں کی جھڑک کر",
       "english": "And those who drive [the clouds]",
-      "startTime": 803,
-      "endTime": 807
+      "startTime": 816,
+      "endTime": 821
     },
     {
-      "id": 34,
+      "id": 33,
       "surahNumber": 37,
       "surahName": "As-Saffat",
       "surahNameArabic": "الصافات",
@@ -493,11 +481,11 @@
       "arabic": "فَٱلتَّٰلِيَٰتِ ذِكْرًا",
       "urdu": "پھر ذکر (یعنی قرآن) پڑھنے والوں کی (غور کرکر)",
       "english": "And those who recite the message,",
-      "startTime": 807,
-      "endTime": 811
+      "startTime": 821,
+      "endTime": 825
     },
     {
-      "id": 35,
+      "id": 34,
       "surahNumber": 37,
       "surahName": "As-Saffat",
       "surahNameArabic": "الصافات",
@@ -505,11 +493,11 @@
       "arabic": "إِنَّ إِلَٰهَكُمْ لَوَٰحِدٌۭ",
       "urdu": "کہ تمہارا معبود ایک ہے",
       "english": "Indeed, your God is One,",
-      "startTime": 811,
-      "endTime": 816
+      "startTime": 825,
+      "endTime": 830
     },
     {
-      "id": 36,
+      "id": 35,
       "surahNumber": 37,
       "surahName": "As-Saffat",
       "surahNameArabic": "الصافات",
@@ -517,11 +505,11 @@
       "arabic": "رَّبُّ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ وَمَا بَيْنَهُمَا وَرَبُّ ٱلْمَشَٰرِقِ",
       "urdu": "جو آسمانوں اور زمین اور جو چیزیں ان میں ہیں سب کا مالک ہے اور سورج کے طلوع ہونے کے مقامات کا بھی مالک ہے",
       "english": "Lord of the heavens and the earth and that between them and Lord of the sunrises.",
-      "startTime": 816,
-      "endTime": 829
+      "startTime": 830,
+      "endTime": 843
     },
     {
-      "id": 37,
+      "id": 36,
       "surahNumber": 37,
       "surahName": "As-Saffat",
       "surahNameArabic": "الصافات",
@@ -529,11 +517,11 @@
       "arabic": "إِنَّا زَيَّنَّا ٱلسَّمَآءَ ٱلدُّنْيَا بِزِينَةٍ ٱلْكَوَاكِبِ",
       "urdu": "بےشک ہم ہی نے آسمان دنیا کو ستاروں کی زینت سے مزین کیا",
       "english": "Indeed, We have adorned the nearest heaven with an adornment of stars",
-      "startTime": 829,
-      "endTime": 840
+      "startTime": 843,
+      "endTime": 855
     },
     {
-      "id": 38,
+      "id": 37,
       "surahNumber": 37,
       "surahName": "As-Saffat",
       "surahNameArabic": "الصافات",
@@ -541,11 +529,11 @@
       "arabic": "وَحِفْظًۭا مِّن كُلِّ شَيْطَٰنٍۢ مَّارِدٍۢ",
       "urdu": "اور ہر شیطان سرکش سے اس کی حفاظت کی",
       "english": "And as protection against every rebellious devil",
-      "startTime": 840,
-      "endTime": 848
+      "startTime": 855,
+      "endTime": 863
     },
     {
-      "id": 39,
+      "id": 38,
       "surahNumber": 37,
       "surahName": "As-Saffat",
       "surahNameArabic": "الصافات",
@@ -553,11 +541,11 @@
       "arabic": "لَّا يَسَّمَّعُونَ إِلَى ٱلْمَلَإِ ٱلْأَعْلَىٰ وَيُقْذَفُونَ مِن كُلِّ جَانِبٍۢ",
       "urdu": "کہ اوپر کی مجلس کی طرف کان نہ لگاسکیں اور ہر طرف سے (ان پر انگارے) پھینکے جاتے ہیں",
       "english": "[So] they may not listen to the exalted assembly [of angels] and are pelted from every side,",
-      "startTime": 848,
-      "endTime": 862
+      "startTime": 863,
+      "endTime": 878
     },
     {
-      "id": 40,
+      "id": 39,
       "surahNumber": 37,
       "surahName": "As-Saffat",
       "surahNameArabic": "الصافات",
@@ -565,11 +553,11 @@
       "arabic": "دُحُورًۭا ۖ وَلَهُمْ عَذَابٌۭ وَاصِبٌ",
       "urdu": "(یعنی وہاں سے) نکال دینے کو اور ان کے لئے دائمی عذاب ہے",
       "english": "Repelled; and for them is a constant punishment,",
-      "startTime": 862,
-      "endTime": 869
+      "startTime": 878,
+      "endTime": 885
     },
     {
-      "id": 41,
+      "id": 40,
       "surahNumber": 37,
       "surahName": "As-Saffat",
       "surahNameArabic": "الصافات",
@@ -577,11 +565,11 @@
       "arabic": "إِلَّا مَنْ خَطِفَ ٱلْخَطْفَةَ فَأَتْبَعَهُۥ شِهَابٌۭ ثَاقِبٌۭ",
       "urdu": "ہاں جو کوئی (فرشتوں کی کسی بات کو) چوری سے جھپٹ لینا چاہتا ہے تو جلتا ہوا انگارہ ان کے پیچھے لگتا ہے",
       "english": "Except one who snatches [some words] by theft, but they are pursued by a burning flame, piercing [in brightness].",
-      "startTime": 869,
-      "endTime": 880
+      "startTime": 885,
+      "endTime": 897
     },
     {
-      "id": 42,
+      "id": 41,
       "surahNumber": 37,
       "surahName": "As-Saffat",
       "surahNameArabic": "الصافات",
@@ -589,11 +577,11 @@
       "arabic": "فَٱسْتَفْتِهِمْ أَهُمْ أَشَدُّ خَلْقًا أَم مَّنْ خَلَقْنَآ ۚ إِنَّا خَلَقْنَٰهُم مِّن طِينٍۢ لَّازِبٍۭ",
       "urdu": "تو ان سے پوچھو کہ ان کا بنانا مشکل ہے یا جتنی خلقت ہم نے بنائی ہے؟ انہیں ہم نے چپکتے گارے سے بنایا ہے",
       "english": "Then inquire of them, [O Muhammad], \"Are they a stronger [or more difficult] creation or those [others] We have created?\" Indeed, We created men from sticky clay.",
-      "startTime": 880,
-      "endTime": 899
+      "startTime": 897,
+      "endTime": 917
     },
     {
-      "id": 43,
+      "id": 42,
       "surahNumber": 55,
       "surahName": "Ar-Rahman",
       "surahNameArabic": "الرحمن",
@@ -601,11 +589,11 @@
       "arabic": "يَٰمَعْشَرَ ٱلْجِنِّ وَٱلْإِنسِ إِنِ ٱسْتَطَعْتُمْ أَن تَنفُذُوا۟ مِنْ أَقْطَارِ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ فَٱنفُذُوا۟ ۚ لَا تَنفُذُونَ إِلَّا بِسُلْطَٰنٍۢ",
       "urdu": "اے گروہِ جن وانس اگر تمہیں قدرت ہو کہ آسمان اور زمین کے کناروں سے نکل جاؤ تو نکل جاؤ۔ اور زور کے سوا تم نکل سکنے ہی کے نہیں",
       "english": "O company of jinn and mankind, if you are able to pass beyond the regions of the heavens and the earth, then pass. You will not pass except by authority [from Allah].",
-      "startTime": 899,
-      "endTime": 927
+      "startTime": 917,
+      "endTime": 946
     },
     {
-      "id": 44,
+      "id": 43,
       "surahNumber": 55,
       "surahName": "Ar-Rahman",
       "surahNameArabic": "الرحمن",
@@ -613,11 +601,11 @@
       "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
       "urdu": "تو تم اپنے پروردگار کی کون کون سی نعمت کو جھٹلاؤ گے؟",
       "english": "So which of the favors of your Lord would you deny?",
-      "startTime": 927,
-      "endTime": 935
+      "startTime": 946,
+      "endTime": 954
     },
     {
-      "id": 45,
+      "id": 44,
       "surahNumber": 55,
       "surahName": "Ar-Rahman",
       "surahNameArabic": "الرحمن",
@@ -625,11 +613,11 @@
       "arabic": "يُرْسَلُ عَلَيْكُمَا شُوَاظٌۭ مِّن نَّارٍۢ وَنُحَاسٌۭ فَلَا تَنتَصِرَانِ",
       "urdu": "تم پر آگ کے شعلے اور دھواں چھوڑ دیا جائے گا تو پھر تم مقابلہ نہ کرسکو گے",
       "english": "There will be sent upon you a flame of fire and smoke, and you will not defend yourselves.",
-      "startTime": 935,
-      "endTime": 948
+      "startTime": 954,
+      "endTime": 968
     },
     {
-      "id": 46,
+      "id": 45,
       "surahNumber": 55,
       "surahName": "Ar-Rahman",
       "surahNameArabic": "الرحمن",
@@ -637,11 +625,11 @@
       "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
       "urdu": "تو تم اپنے پروردگار کی کون کون سی نعمت کو جھٹلاؤ گے؟",
       "english": "So which of the favors of your Lord would you deny?",
-      "startTime": 948,
-      "endTime": 956
+      "startTime": 968,
+      "endTime": 976
     },
     {
-      "id": 47,
+      "id": 46,
       "surahNumber": 55,
       "surahName": "Ar-Rahman",
       "surahNameArabic": "الرحمن",
@@ -649,11 +637,11 @@
       "arabic": "فَإِذَا ٱنشَقَّتِ ٱلسَّمَآءُ فَكَانَتْ وَرْدَةًۭ كَٱلدِّهَانِ",
       "urdu": "پھر جب آسمان پھٹ کر تیل کی تلچھٹ کی طرح گلابی ہوجائے گا (تو) وہ کیسا ہولناک دن ہوگا",
       "english": "And when the heaven is split open and becomes rose-colored like oil -",
-      "startTime": 956,
-      "endTime": 967
+      "startTime": 976,
+      "endTime": 988
     },
     {
-      "id": 48,
+      "id": 47,
       "surahNumber": 55,
       "surahName": "Ar-Rahman",
       "surahNameArabic": "الرحمن",
@@ -661,11 +649,11 @@
       "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
       "urdu": "تو تم اپنے پروردگار کی کون کون سی نعمت کو جھٹلاؤ گے؟",
       "english": "So which of the favors of your Lord would you deny? -",
-      "startTime": 967,
-      "endTime": 975
+      "startTime": 988,
+      "endTime": 996
     },
     {
-      "id": 49,
+      "id": 48,
       "surahNumber": 55,
       "surahName": "Ar-Rahman",
       "surahNameArabic": "الرحمن",
@@ -673,11 +661,11 @@
       "arabic": "فَيَوْمَئِذٍۢ لَّا يُسْـَٔلُ عَن ذَنۢبِهِۦٓ إِنسٌۭ وَلَا جَآنٌّۭ",
       "urdu": "اس روز نہ تو کسی انسان سے اس کے گناہوں کے بارے میں پرسش کی جائے گی اور نہ کسی جن سے",
       "english": "Then on that Day none will be asked about his sin among men or jinn.",
-      "startTime": 975,
-      "endTime": 987
+      "startTime": 996,
+      "endTime": 1008
     },
     {
-      "id": 50,
+      "id": 49,
       "surahNumber": 55,
       "surahName": "Ar-Rahman",
       "surahNameArabic": "الرحمن",
@@ -685,11 +673,11 @@
       "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
       "urdu": "تو تم اپنے پروردگار کی کون کون سی نعمت کو جھٹلاؤ گے؟",
       "english": "So which of the favors of your Lord would you deny?",
-      "startTime": 987,
-      "endTime": 995
+      "startTime": 1008,
+      "endTime": 1016
     },
     {
-      "id": 51,
+      "id": 50,
       "surahNumber": 59,
       "surahName": "Al-Hashr",
       "surahNameArabic": "الحشر",
@@ -697,11 +685,11 @@
       "arabic": "لَوْ أَنزَلْنَا هَٰذَا ٱلْقُرْءَانَ عَلَىٰ جَبَلٍۢ لَّرَأَيْتَهُۥ خَٰشِعًۭا مُّتَصَدِّعًۭا مِّنْ خَشْيَةِ ٱللَّهِ ۚ وَتِلْكَ ٱلْأَمْثَٰلُ نَضْرِبُهَا لِلنَّاسِ لَعَلَّهُمْ يَتَفَكَّرُونَ",
       "urdu": "اگر ہم یہ قرآن کسی پہاڑ پر نازل کرتے تو تم اس کو دیکھتے کہ خدا کے خوف سے دبا اور پھٹا جاتا ہے۔ اور یہ باتیں ہم لوگوں کے لئے بیان کرتے ہیں تاکہ وہ فکر کریں",
       "english": "If We had sent down this Qur'an upon a mountain, you would have seen it humbled and coming apart from fear of Allah. And these examples We present to the people that perhaps they will give thought.",
-      "startTime": 995,
-      "endTime": 1029
+      "startTime": 1016,
+      "endTime": 1051
     },
     {
-      "id": 52,
+      "id": 51,
       "surahNumber": 59,
       "surahName": "Al-Hashr",
       "surahNameArabic": "الحشر",
@@ -709,11 +697,11 @@
       "arabic": "هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَٰهَ إِلَّا هُوَ ۖ عَٰلِمُ ٱلْغَيْبِ وَٱلشَّهَٰدَةِ ۖ هُوَ ٱلرَّحْمَٰنُ ٱلرَّحِيمُ",
       "urdu": "وہی خدا ہے جس کے سوا کوئی معبود نہیں۔ پوشیدہ اور ظاہر کا جاننے والا ہے وہ بڑا مہربان نہایت رحم والا ہے",
       "english": "He is Allah, other than whom there is no deity, Knower of the unseen and the witnessed. He is the Entirely Merciful, the Especially Merciful.",
-      "startTime": 1029,
-      "endTime": 1049
+      "startTime": 1051,
+      "endTime": 1072
     },
     {
-      "id": 53,
+      "id": 52,
       "surahNumber": 59,
       "surahName": "Al-Hashr",
       "surahNameArabic": "الحشر",
@@ -721,11 +709,11 @@
       "arabic": "هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَٰهَ إِلَّا هُوَ ٱلْمَلِكُ ٱلْقُدُّوسُ ٱلسَّلَٰمُ ٱلْمُؤْمِنُ ٱلْمُهَيْمِنُ ٱلْعَزِيزُ ٱلْجَبَّارُ ٱلْمُتَكَبِّرُ ۚ سُبْحَٰنَ ٱللَّهِ عَمَّا يُشْرِكُونَ",
       "urdu": "وہی خدا ہے جس کے سوا کوئی عبادت کے لائق نہیں۔ بادشاہ (حقیقی) پاک ذات (ہر عیب سے) سلامتی امن دینے والا نگہبان غالب زبردست بڑائی والا۔ خدا ان لوگوں کے شریک مقرر کرنے سے پاک ہے",
       "english": "He is Allah, other than whom there is no deity, the Sovereign, the Pure, the Perfection, the Bestower of Faith, the Overseer, the Exalted in Might, the Compeller, the Superior. Exalted is Allah above whatever they associate with Him.",
-      "startTime": 1049,
-      "endTime": 1082
+      "startTime": 1072,
+      "endTime": 1106
     },
     {
-      "id": 54,
+      "id": 53,
       "surahNumber": 59,
       "surahName": "Al-Hashr",
       "surahNameArabic": "الحشر",
@@ -733,23 +721,23 @@
       "arabic": "هُوَ ٱللَّهُ ٱلْخَٰلِقُ ٱلْبَارِئُ ٱلْمُصَوِّرُ ۖ لَهُ ٱلْأَسْمَآءُ ٱلْحُسْنَىٰ ۚ يُسَبِّحُ لَهُۥ مَا فِى ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ ۖ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
       "urdu": "وہی خدا (تمام مخلوقات کا) خالق۔ ایجاد واختراع کرنے والا صورتیں بنانے والا اس کے سب اچھے سے اچھے نام ہیں۔ جتنی چیزیں آسمانوں اور زمین میں ہیں سب اس کی تسبیح کرتی ہیں اور وہ غالب حکمت والا ہے",
       "english": "He is Allah, the Creator, the Inventor, the Fashioner; to Him belong the best names. Whatever is in the heavens and earth is exalting Him. And He is the Exalted in Might, the Wise.",
-      "startTime": 1082,
-      "endTime": 1112
+      "startTime": 1106,
+      "endTime": 1137
     },
     {
-      "id": 55,
+      "id": 54,
       "surahNumber": 72,
       "surahName": "Al-Jinn",
       "surahNameArabic": "الجن",
       "ayah": 1,
-      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ أُوحِىَ إِلَىَّ أَنَّهُ ٱسْتَمَعَ نَفَرٌۭ مِّنَ ٱلْجِنِّ فَقَالُوٓا۟ إِنَّا سَمِعْنَا قُرْءَانًا عَجَبًۭا",
+      "arabic": "قُلْ أُوحِىَ إِلَىَّ أَنَّهُ ٱسْتَمَعَ نَفَرٌۭ مِّنَ ٱلْجِنِّ فَقَالُوٓا۟ إِنَّا سَمِعْنَا قُرْءَانًا عَجَبًۭا",
       "urdu": "(اے پیغمبر لوگوں سے) کہہ دو کہ میرے پاس وحی آئی ہے کہ جنوں کی ایک جماعت نے (اس کتاب کو) سنا تو کہنے لگے کہ ہم نے ایک عجیب قرآن سنا",
       "english": "Say, [O Muhammad], \"It has been revealed to me that a group of the jinn listened and said, 'Indeed, we have heard an amazing Qur'an.",
-      "startTime": 1112,
-      "endTime": 1139
+      "startTime": 1137,
+      "endTime": 1158
     },
     {
-      "id": 56,
+      "id": 55,
       "surahNumber": 72,
       "surahName": "Al-Jinn",
       "surahNameArabic": "الجن",
@@ -757,11 +745,11 @@
       "arabic": "يَهْدِىٓ إِلَى ٱلرُّشْدِ فَـَٔامَنَّا بِهِۦ ۖ وَلَن نُّشْرِكَ بِرَبِّنَآ أَحَدًۭا",
       "urdu": "جو بھلائی کا رستہ بتاتا ہے سو ہم اس پر ایمان لے آئے۔ اور ہم اپنے پروردگار کے ساتھ کسی کو شریک نہیں بنائیں گے",
       "english": "It guides to the right course, and we have believed in it. And we will never associate with our Lord anyone.",
-      "startTime": 1139,
-      "endTime": 1154
+      "startTime": 1158,
+      "endTime": 1174
     },
     {
-      "id": 57,
+      "id": 56,
       "surahNumber": 72,
       "surahName": "Al-Jinn",
       "surahNameArabic": "الجن",
@@ -769,11 +757,11 @@
       "arabic": "وَأَنَّهُۥ تَعَٰلَىٰ جَدُّ رَبِّنَا مَا ٱتَّخَذَ صَٰحِبَةًۭ وَلَا وَلَدًۭا",
       "urdu": "اور یہ کہ ہمارے پروردگار کی عظمت (شان) بہت بڑی ہے اور وہ نہ بیوی رکھتا ہے نہ اولاد",
       "english": "And [it teaches] that exalted is the nobleness of our Lord; He has not taken a wife or a son",
-      "startTime": 1154,
-      "endTime": 1167
+      "startTime": 1174,
+      "endTime": 1188
     },
     {
-      "id": 58,
+      "id": 57,
       "surahNumber": 72,
       "surahName": "Al-Jinn",
       "surahNameArabic": "الجن",
@@ -781,23 +769,23 @@
       "arabic": "وَأَنَّهُۥ كَانَ يَقُولُ سَفِيهُنَا عَلَى ٱللَّهِ شَطَطًۭا",
       "urdu": "اور یہ کہ ہم میں سے بعض بےوقوف خدا کے بارے میں جھوٹ افتراء کرتا ہے",
       "english": "And that our foolish one has been saying about Allah an excessive transgression.",
-      "startTime": 1167,
-      "endTime": 1178
+      "startTime": 1188,
+      "endTime": 1199
     },
     {
-      "id": 59,
+      "id": 58,
       "surahNumber": 109,
       "surahName": "Al-Kafirun",
       "surahNameArabic": "الكافرون",
       "ayah": 1,
-      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ يَٰٓأَيُّهَا ٱلْكَٰفِرُونَ",
+      "arabic": "قُلْ يَٰٓأَيُّهَا ٱلْكَٰفِرُونَ",
       "urdu": "(اے پیغمبر ان منکران اسلام سے) کہہ دو کہ اے کافرو!",
       "english": "Say, \"O disbelievers,",
-      "startTime": 1178,
-      "endTime": 1191
+      "startTime": 1199,
+      "endTime": 1205
     },
     {
-      "id": 60,
+      "id": 59,
       "surahNumber": 109,
       "surahName": "Al-Kafirun",
       "surahNameArabic": "الكافرون",
@@ -805,11 +793,11 @@
       "arabic": "لَآ أَعْبُدُ مَا تَعْبُدُونَ",
       "urdu": "جن (بتوں) کو تم پوچتے ہو ان کو میں نہیں پوجتا",
       "english": "I do not worship what you worship.",
-      "startTime": 1191,
-      "endTime": 1196
+      "startTime": 1205,
+      "endTime": 1211
     },
     {
-      "id": 61,
+      "id": 60,
       "surahNumber": 109,
       "surahName": "Al-Kafirun",
       "surahNameArabic": "الكافرون",
@@ -817,11 +805,11 @@
       "arabic": "وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ",
       "urdu": "اور جس (خدا) کی میں عبادت کرتا ہوں اس کی تم عبادت نہیں کرتے",
       "english": "Nor are you worshippers of what I worship.",
-      "startTime": 1196,
-      "endTime": 1203
+      "startTime": 1211,
+      "endTime": 1218
     },
     {
-      "id": 62,
+      "id": 61,
       "surahNumber": 109,
       "surahName": "Al-Kafirun",
       "surahNameArabic": "الكافرون",
@@ -829,11 +817,11 @@
       "arabic": "وَلَآ أَنَا۠ عَابِدٌۭ مَّا عَبَدتُّمْ",
       "urdu": "اور (میں پھر کہتا ہوں کہ) جن کی تم پرستش کرتے ہوں ان کی میں پرستش کرنے والا نہیں ہوں",
       "english": "Nor will I be a worshipper of what you worship.",
-      "startTime": 1203,
-      "endTime": 1210
+      "startTime": 1218,
+      "endTime": 1225
     },
     {
-      "id": 63,
+      "id": 62,
       "surahNumber": 109,
       "surahName": "Al-Kafirun",
       "surahNameArabic": "الكافرون",
@@ -841,11 +829,11 @@
       "arabic": "وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ",
       "urdu": "اور نہ تم اس کی بندگی کرنے والے (معلوم ہوتے) ہو جس کی میں بندگی کرتا ہوں",
       "english": "Nor will you be worshippers of what I worship.",
-      "startTime": 1210,
-      "endTime": 1217
+      "startTime": 1225,
+      "endTime": 1232
     },
     {
-      "id": 64,
+      "id": 63,
       "surahNumber": 109,
       "surahName": "Al-Kafirun",
       "surahNameArabic": "الكافرون",
@@ -853,23 +841,23 @@
       "arabic": "لَكُمْ دِينُكُمْ وَلِىَ دِينِ",
       "urdu": "تم اپنے دین پر میں اپنے دین پر",
       "english": "For you is your religion, and for me is my religion.\"",
-      "startTime": 1217,
-      "endTime": 1222
+      "startTime": 1232,
+      "endTime": 1238
     },
     {
-      "id": 65,
+      "id": 64,
       "surahNumber": 112,
       "surahName": "Al-Ikhlas",
       "surahNameArabic": "الإخلاص",
       "ayah": 1,
-      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ هُوَ ٱللَّهُ أَحَدٌ",
+      "arabic": "قُلْ هُوَ ٱللَّهُ أَحَدٌ",
       "urdu": "کہو کہ وہ (ذات پاک جس کا نام) الله (ہے) ایک ہے",
       "english": "Say, \"He is Allah, [who is] One,",
-      "startTime": 1222,
-      "endTime": 1233
+      "startTime": 1238,
+      "endTime": 1243
     },
     {
-      "id": 66,
+      "id": 65,
       "surahNumber": 112,
       "surahName": "Al-Ikhlas",
       "surahNameArabic": "الإخلاص",
@@ -877,11 +865,11 @@
       "arabic": "ٱللَّهُ ٱلصَّمَدُ",
       "urdu": "معبود برحق جو بےنیاز ہے",
       "english": "Allah, the Eternal Refuge.",
-      "startTime": 1233,
-      "endTime": 1236
+      "startTime": 1243,
+      "endTime": 1246
     },
     {
-      "id": 67,
+      "id": 66,
       "surahNumber": 112,
       "surahName": "Al-Ikhlas",
       "surahNameArabic": "الإخلاص",
@@ -889,11 +877,11 @@
       "arabic": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
       "urdu": "نہ کسی کا باپ ہے اور نہ کسی کا بیٹا",
       "english": "He neither begets nor is born,",
-      "startTime": 1236,
-      "endTime": 1241
+      "startTime": 1246,
+      "endTime": 1251
     },
     {
-      "id": 68,
+      "id": 67,
       "surahNumber": 112,
       "surahName": "Al-Ikhlas",
       "surahNameArabic": "الإخلاص",
@@ -901,23 +889,23 @@
       "arabic": "وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ",
       "urdu": "اور کوئی اس کا ہمسر نہیں",
       "english": "Nor is there to Him any equivalent.\"",
-      "startTime": 1241,
-      "endTime": 1247
+      "startTime": 1251,
+      "endTime": 1258
     },
     {
-      "id": 69,
+      "id": 68,
       "surahNumber": 113,
       "surahName": "Al-Falaq",
       "surahNameArabic": "الفلق",
       "ayah": 1,
-      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ",
+      "arabic": "قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ",
       "urdu": "کہو کہ میں صبح کے پروردگار کی پناہ مانگتا ہوں",
       "english": "Say, \"I seek refuge in the Lord of daybreak",
-      "startTime": 1247,
-      "endTime": 1260
+      "startTime": 1258,
+      "endTime": 1264
     },
     {
-      "id": 70,
+      "id": 69,
       "surahNumber": 113,
       "surahName": "Al-Falaq",
       "surahNameArabic": "الفلق",
@@ -925,11 +913,11 @@
       "arabic": "مِن شَرِّ مَا خَلَقَ",
       "urdu": "ہر چیز کی بدی سے جو اس نے پیدا کی",
       "english": "From the evil of that which He created",
-      "startTime": 1260,
-      "endTime": 1264
+      "startTime": 1264,
+      "endTime": 1268
     },
     {
-      "id": 71,
+      "id": 70,
       "surahNumber": 113,
       "surahName": "Al-Falaq",
       "surahNameArabic": "الفلق",
@@ -937,11 +925,11 @@
       "arabic": "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ",
       "urdu": "اور شب تاریکی کی برائی سے جب اس کااندھیرا چھا جائے",
       "english": "And from the evil of darkness when it settles",
-      "startTime": 1264,
-      "endTime": 1270
+      "startTime": 1268,
+      "endTime": 1274
     },
     {
-      "id": 72,
+      "id": 71,
       "surahNumber": 113,
       "surahName": "Al-Falaq",
       "surahNameArabic": "الفلق",
@@ -949,11 +937,11 @@
       "arabic": "وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ",
       "urdu": "اور گنڈوں پر (پڑھ پڑھ کر) پھونکنے والیوں کی برائی سے",
       "english": "And from the evil of the blowers in knots",
-      "startTime": 1270,
-      "endTime": 1277
+      "startTime": 1274,
+      "endTime": 1282
     },
     {
-      "id": 73,
+      "id": 72,
       "surahNumber": 113,
       "surahName": "Al-Falaq",
       "surahNameArabic": "الفلق",
@@ -961,23 +949,23 @@
       "arabic": "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
       "urdu": "اور حسد کرنے والے کی برائی سے جب حسد کرنے لگے",
       "english": "And from the evil of an envier when he envies.\"",
-      "startTime": 1277,
-      "endTime": 1283
+      "startTime": 1282,
+      "endTime": 1288
     },
     {
-      "id": 74,
+      "id": 73,
       "surahNumber": 114,
       "surahName": "An-Nas",
       "surahNameArabic": "الناس",
       "ayah": 1,
-      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
+      "arabic": "قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
       "urdu": "کہو کہ میں لوگوں کے پروردگار کی پناہ مانگتا ہوں",
       "english": "Say, \"I seek refuge in the Lord of mankind,",
-      "startTime": 1283,
-      "endTime": 1295
+      "startTime": 1288,
+      "endTime": 1294
     },
     {
-      "id": 75,
+      "id": 74,
       "surahNumber": 114,
       "surahName": "An-Nas",
       "surahNameArabic": "الناس",
@@ -985,11 +973,11 @@
       "arabic": "مَلِكِ ٱلنَّاسِ",
       "urdu": "(یعنی) لوگوں کے حقیقی بادشاہ کی",
       "english": "The Sovereign of mankind.",
-      "startTime": 1295,
-      "endTime": 1298
+      "startTime": 1294,
+      "endTime": 1297
     },
     {
-      "id": 76,
+      "id": 75,
       "surahNumber": 114,
       "surahName": "An-Nas",
       "surahNameArabic": "الناس",
@@ -997,11 +985,11 @@
       "arabic": "إِلَٰهِ ٱلنَّاسِ",
       "urdu": "لوگوں کے معبود برحق کی",
       "english": "The God of mankind,",
-      "startTime": 1298,
-      "endTime": 1301
+      "startTime": 1297,
+      "endTime": 1300
     },
     {
-      "id": 77,
+      "id": 76,
       "surahNumber": 114,
       "surahName": "An-Nas",
       "surahNameArabic": "الناس",
@@ -1009,11 +997,11 @@
       "arabic": "مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ",
       "urdu": "(شیطان) وسوسہ انداز کی برائی سے جو (خدا کا نام سن کر) پیچھے ہٹ جاتا ہے",
       "english": "From the evil of the retreating whisperer -",
-      "startTime": 1301,
-      "endTime": 1307
+      "startTime": 1300,
+      "endTime": 1306
     },
     {
-      "id": 78,
+      "id": 77,
       "surahNumber": 114,
       "surahName": "An-Nas",
       "surahNameArabic": "الناس",
@@ -1021,11 +1009,11 @@
       "arabic": "ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ",
       "urdu": "جو لوگوں کے دلوں میں وسوسے ڈالتا ہے",
       "english": "Who whispers [evil] into the breasts of mankind -",
-      "startTime": 1307,
-      "endTime": 1314
+      "startTime": 1306,
+      "endTime": 1313
     },
     {
-      "id": 79,
+      "id": 78,
       "surahNumber": 114,
       "surahName": "An-Nas",
       "surahNameArabic": "الناس",
@@ -1033,8 +1021,8 @@
       "arabic": "مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
       "urdu": "وہ جنّات میں سے (ہو) یا انسانوں میں سے",
       "english": "From among the jinn and mankind.\"",
-      "startTime": 1314,
-      "endTime": 1319
+      "startTime": 1313,
+      "endTime": 1318
     }
   ]
 }

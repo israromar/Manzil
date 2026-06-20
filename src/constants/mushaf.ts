@@ -15,6 +15,13 @@ export function stripLeadingBismillah(arabic: string) {
   return arabic.replace(BISMILLAH_PREFIX, '').trim();
 }
 
+/** True when the verse text is only Bismillah (e.g. Al-Fatiha ayah 1 in standard numbering). */
+export function isBismillahOnlyVerse(arabic: string) {
+  const normalized = arabic.replace(/^\uFEFF/, '').trim();
+  if (!normalized) return false;
+  return stripLeadingBismillah(normalized) === '';
+}
+
 export function toArabicNumerals(value: number) {
   const eastern = '٠١٢٣٤٥٦٧٨٩';
   return String(value)

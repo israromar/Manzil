@@ -1,5 +1,13 @@
 import { useCallback, useEffect, useMemo, useRef } from 'react';
-import { FlatList, ImageBackground, NativeScrollEvent, NativeSyntheticEvent, StyleSheet, Text, View } from 'react-native';
+import {
+  FlatList,
+  ImageBackground,
+  NativeScrollEvent,
+  NativeSyntheticEvent,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 
 import { AudioDock } from '../src/components/AudioDock';
@@ -33,10 +41,12 @@ export default function ReaderScreen() {
     return map;
   }, [sections]);
 
-  const initialVerseIdRef = useRef(Number(verseId ?? progress.lastVerseId ?? 1));
+  const initialVerseIdRef = useRef(
+    Number(verseId ?? progress.lastVerseId ?? 1),
+  );
   const initialVerseIndex = useMemo(
     () => Math.max(0, getVerseIndexById(verses, initialVerseIdRef.current)),
-    [verses]
+    [verses],
   );
 
   useEffect(() => {
@@ -56,10 +66,13 @@ export default function ReaderScreen() {
       progressTimerRef.current = setTimeout(() => {
         const approximateIndex = Math.max(0, Math.floor(offset / 170));
         const verse = verses[approximateIndex];
-        setReadingProgress({ lastVerseId: verse?.id ?? null, lastScrollOffset: offset });
+        setReadingProgress({
+          lastVerseId: verse?.id ?? null,
+          lastScrollOffset: offset,
+        });
       }, 400);
     },
-    [setReadingProgress, verses]
+    [setReadingProgress, verses],
   );
 
   useEffect(() => {
@@ -91,21 +104,37 @@ export default function ReaderScreen() {
             windowSize={7}
             onMomentumScrollEnd={onScrollEnd}
             onScrollToIndexFailed={() => {
-              flatListRef.current?.scrollToOffset({ offset: initialVerseIndex * 170, animated: false });
+              flatListRef.current?.scrollToOffset({
+                offset: initialVerseIndex * 170,
+                animated: false,
+              });
             }}
             ListHeaderComponent={
               <View style={styles.header}>
-                <ImageBackground source={IMAGES.readerHeader} style={styles.banner} imageStyle={styles.bannerImage}>
-                  <View style={[styles.bannerOverlay, { backgroundColor: theme.background }]} />
+                <ImageBackground
+                  source={IMAGES.readerHeader}
+                  style={styles.banner}
+                  imageStyle={styles.bannerImage}
+                >
+                  <View
+                    style={[
+                      styles.bannerOverlay,
+                      { backgroundColor: theme.background },
+                    ]}
+                  />
                 </ImageBackground>
                 <View style={styles.headerRow}>
                   <View style={styles.headerText}>
-                    <Text style={[styles.headerTitle, { color: theme.text }]}>Read Manzil</Text>
+                    <Text style={[styles.headerTitle, { color: theme.text }]}>
+                      Read Manzil
+                    </Text>
                     <Text style={{ color: theme.subtext }}>
                       {sections.length} sections • {verses.length} ayat
                     </Text>
                   </View>
-                  <ReadingFormatButton onPress={() => router.push('/reading-format')} />
+                  <ReadingFormatButton
+                    onPress={() => router.push('/reading-format')}
+                  />
                 </View>
               </View>
             }
@@ -142,7 +171,12 @@ const styles = StyleSheet.create({
   },
   bannerImage: { resizeMode: 'cover' },
   bannerOverlay: { ...StyleSheet.absoluteFill, opacity: 0.55 },
-  headerRow: { flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between', gap: 12 },
+  headerRow: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    justifyContent: 'space-between',
+    gap: 12,
+  },
   headerText: { flex: 1 },
   headerTitle: { fontSize: 24, fontWeight: '700' },
 });

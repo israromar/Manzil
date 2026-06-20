@@ -1,6 +1,11 @@
 import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
+import {
+  isBismillahOnlyVerse,
+  stripLeadingBismillah,
+} from '../src/constants/mushaf';
+
 const ESTIMATED_TOTAL_DURATION_SECONDS = 22 * 60;
 const DATA_SOURCE_NOTE =
   'Source: api.alquran.cloud editions quran-uthmani (Arabic), en.sahih (English), ur.jalandhry (Urdu).';
@@ -17,7 +22,7 @@ const MANZIL_SEGMENTS: Segment[] = [
     surahNumber: 1,
     surahName: 'Al-Fatiha',
     surahNameArabic: 'الفاتحة',
-    ayahs: [1, 2, 3, 4, 5, 6, 7],
+    ayahs: [2, 3, 4, 5, 6, 7],
   },
   {
     surahNumber: 2,
@@ -140,11 +145,20 @@ async function run() {
     });
 
     for (const ayah of segment.ayahs) {
-      const [arabic, english, urdu] = await Promise.all([
+      const [arabicRaw, english, urdu] = await Promise.all([
         getVerseText(segment.surahNumber, ayah, 'quran-uthmani'),
         getVerseText(segment.surahNumber, ayah, 'en.sahih'),
         getVerseText(segment.surahNumber, ayah, 'ur.jalandhry'),
       ]);
+
+      if (segment.surahNumber !== 9 && isBismillahOnlyVerse(arabicRaw)) {
+        continue;
+      }
+
+      const arabic = stripLeadingBismillah(arabicRaw);
+      if (!arabic) {
+        continue;
+      }
 
       verses.push({
         id: verses.length + 1,
